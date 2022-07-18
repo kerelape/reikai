@@ -1,0 +1,5 @@
+install: |
+  pdd --file=/dev/null
+merge:
+  script: |
+    mvn clean install -Pqulice --errors -Dstyle.color=never
