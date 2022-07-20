@@ -17,9 +17,7 @@ class Heap(private val buffer: ByteBuffer) : RandomAccessDestination {
 
     override suspend fun put(position: Entity, data: Entity): Entity {
         this.buffer.position(BigInteger(position.dataize()).toInt())
-        for (byte in data.dataize()) {
-            this.buffer.put(byte)
-        }
+        this.buffer.put(data.dataize())
         return data
     }
 }
