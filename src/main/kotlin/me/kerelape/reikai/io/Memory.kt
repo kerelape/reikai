@@ -17,7 +17,7 @@ class Memory(
     override suspend fun dataize(): ByteArray {
         val position = BigInteger(this.position.dataize()).toInt()
         val size = BigInteger(this.size.dataize()).toInt()
-        return this.origin.dataize().slice(position..(position + size)).toByteArray()
+        return this.origin.dataize().slice(position until (position + size)).toByteArray()
     }
 
     override suspend fun put(data: Entity): Entity {
