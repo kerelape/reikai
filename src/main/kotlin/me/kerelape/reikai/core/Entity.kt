@@ -5,12 +5,12 @@ package me.kerelape.reikai.core
  *
  * @since 0.0.0
  */
-interface Quantum {
+interface Entity {
 
     /**
      * Representation of the object in bytes.
      *
      * @return This object in binary format.
      */
-    suspend fun data(): ByteArray
+    suspend fun dataize(): ByteArray
 }

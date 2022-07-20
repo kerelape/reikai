@@ -20,7 +20,7 @@ class IntegerTest {
         Assertions.assertEquals(
             12L,
             BigInteger(
-                Integer(12).data()
+                Integer(12).dataize()
             ).toLong()
         )
     }

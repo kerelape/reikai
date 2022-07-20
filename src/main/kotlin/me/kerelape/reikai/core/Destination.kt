@@ -5,7 +5,7 @@ package me.kerelape.reikai.core
  *
  * @since 0.0.0
  */
-interface Destination : Quantum {
+interface Destination : Entity {
 
     /**
      * Put arbitrary [data] to the destination.
@@ -13,5 +13,5 @@ interface Destination : Quantum {
      * @param data Arbitrary data.
      * @return The data that was put.
      */
-    suspend fun put(data: Quantum): Quantum
+    suspend fun put(data: Entity): Entity
 }

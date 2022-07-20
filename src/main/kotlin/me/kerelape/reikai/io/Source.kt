@@ -1,13 +1,13 @@
 package me.kerelape.reikai.io
 
-import me.kerelape.reikai.core.Quantum
+import me.kerelape.reikai.core.Entity
 
 /**
  * Source of data.
  *
  * @since 0.0.0
  */
-interface Source : Quantum {
+interface Source : Entity {
 
     suspend fun open(): Channel
 }

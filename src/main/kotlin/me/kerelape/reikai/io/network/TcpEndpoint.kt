@@ -1,8 +1,7 @@
 package me.kerelape.reikai.io.network
 
 import java.math.BigInteger
-import me.kerelape.reikai.core.Destination
-import me.kerelape.reikai.core.Quantum
+import me.kerelape.reikai.core.Entity
 import me.kerelape.reikai.io.Channel
 import me.kerelape.reikai.io.Source
 
@@ -11,7 +10,7 @@ import me.kerelape.reikai.io.Source
  *
  * @since 0.0.0
  */
-class TcpEndpoint(private val address: Quantum, private val port: Quantum) : Endpoint {
+class TcpEndpoint(private val address: Entity, private val port: Entity) : Endpoint {
 
     /**
      * @todo #2 Create an object that converts quantum of
@@ -21,8 +20,8 @@ class TcpEndpoint(private val address: Quantum, private val port: Quantum) : End
      *  of arguments to fill the placeholders.
      * @return Its destination in format "address:port"
      */
-    override suspend fun data(): ByteArray {
-        return "${String(this.address.data())}:${BigInteger(this.port.data())}".toByteArray()
+    override suspend fun dataize(): ByteArray {
+        return "${String(this.address.dataize())}:${BigInteger(this.port.dataize())}".toByteArray()
     }
 
     /**
