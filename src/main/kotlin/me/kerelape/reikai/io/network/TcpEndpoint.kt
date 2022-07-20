@@ -33,7 +33,7 @@ class TcpEndpoint(private val address: Quantum, private val port: Quantum) : End
      * @return Socket client object.
      */
     override suspend fun open(): Channel {
-        TODO("Not yet implemented")
+        throw NotImplementedError()
     }
 
     /**
@@ -44,6 +44,6 @@ class TcpEndpoint(private val address: Quantum, private val port: Quantum) : End
      * @return A listening server object.
      */
     override suspend fun listen(): Source {
-        TODO("Not yet implemented")
+        throw NotImplementedError()
     }
 }
