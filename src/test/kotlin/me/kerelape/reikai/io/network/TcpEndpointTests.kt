@@ -24,7 +24,7 @@ class TcpEndpointTests {
     fun `test works`(): Unit = runBlocking {
         val endpoint = TcpEndpoint(
             /*
-                @todo Create adapter for kotlin.String and replace this object with it
+                @todo #2 Create adapter for kotlin.String and replace this object with it
              */
             (object : Quantum {
                 override suspend fun data(): ByteArray {

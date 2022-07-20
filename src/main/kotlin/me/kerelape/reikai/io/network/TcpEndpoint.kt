@@ -14,9 +14,9 @@ import me.kerelape.reikai.io.Source
 class TcpEndpoint(private val address: Quantum, private val port: Quantum) : Endpoint {
 
     /**
-     * @todo 2 Create an object that converts quantum of
+     * @todo #2 Create an object that converts quantum of
      *  a number to a quantum of a string.
-     * @todo 2 Create an object that can format texts like sprintf in EO.
+     * @todo #2 Create an object that can format texts like sprintf in EO.
      *  This object must accept a quantum of text and an arbitrary amount
      *  of arguments to fill the placeholders.
      * @return Its destination in format "address:port"
@@ -28,7 +28,7 @@ class TcpEndpoint(private val address: Quantum, private val port: Quantum) : End
     /**
      * Connect to the endpoint.
      *
-     * @todo 2 Create a socket destination and make this method work.
+     * @todo #2 Create a socket destination and make this method work.
      *  An async socket must be used.
      * @return Socket client object.
      */
@@ -39,7 +39,7 @@ class TcpEndpoint(private val address: Quantum, private val port: Quantum) : End
     /**
      * Start listening on the endpoint.
      *
-     * @todo 2 Create server object that listens for incoming connections.
+     * @todo #2 Create server object that listens for incoming connections.
      *  Must be async.
      * @return A listening server object.
      */
