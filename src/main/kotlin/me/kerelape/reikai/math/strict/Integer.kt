@@ -1,7 +1,7 @@
 package me.kerelape.reikai.math.strict
 
-import java.math.BigInteger
 import me.kerelape.reikai.core.Entity
+import java.nio.ByteBuffer
 
 /**
  * Wrapper for strict kotlin numbers.
@@ -16,6 +16,6 @@ class Integer(private val origin: Long) : Entity {
      * @return Binary representation of [origin].
      */
     override suspend fun dataize(): ByteArray {
-        return BigInteger(this.origin.toString()).toByteArray()
+        return ByteBuffer.allocate(Long.SIZE_BYTES).putLong(this.origin).array()
     }
 }
