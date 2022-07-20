@@ -19,10 +19,10 @@ class HeapTests {
      */
     @Test
     fun `puts data`() = runBlocking {
-        val heap = Heap(ByteBuffer.allocate(Int.SIZE_BYTES))
+        val heap = Heap(ByteBuffer.allocate(Long.SIZE_BYTES))
         Assertions.assertEquals(
-            BigInteger(heap.put(0.asEntity, 128.asEntity).dataize()).toInt(),
-            BigInteger(heap.dataize()).toInt()
+            BigInteger(heap.put(0.asEntity, 128.asEntity).dataize()).toLong(),
+            BigInteger(heap.dataize()).toLong()
         )
     }
 }
