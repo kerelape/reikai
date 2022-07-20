@@ -1,7 +1,5 @@
 package me.kerelape.reikai.io
 
-import me.kerelape.reikai.core.Destination
-
 /**
  * Destination that can be closed.
  *

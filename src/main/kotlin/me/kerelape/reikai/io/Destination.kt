@@ -1,4 +1,6 @@
-package me.kerelape.reikai.core
+package me.kerelape.reikai.io
+
+import me.kerelape.reikai.core.Entity
 
 /**
  * Destination of data.
