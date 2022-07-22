@@ -1,6 +1,7 @@
 package me.kerelape.reikai.io.network
 
 import java.net.InetSocketAddress
+import java.nio.channels.AsynchronousServerSocketChannel
 import java.nio.channels.AsynchronousSocketChannel
 import java.nio.channels.CompletionHandler
 import java.math.BigInteger
@@ -61,11 +62,16 @@ class TcpEndpoint(private val address: Entity, private val port: Entity) : Endpo
     /**
      * Start listening on the endpoint.
      *
-     * @todo #2 Create server object that listens for incoming connections.
-     *  Must be async.
      * @return A listening server object.
      */
     override suspend fun listen(): Source {
-        throw NotImplementedError()
+        val address = InetSocketAddress(
+            String(this.address.dataize()),
+            BigInteger(this.port.dataize()).toInt()
+        )
+        val channel = withContext(Dispatchers.IO) {
+            AsynchronousServerSocketChannel.open().bind(address)
+        }
+        return TcpSource(channel)
     }
 }
