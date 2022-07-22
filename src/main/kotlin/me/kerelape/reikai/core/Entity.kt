@@ -5,7 +5,7 @@ package me.kerelape.reikai.core
  *
  * @since 0.0.0
  */
-interface Entity {
+fun interface Entity {
 
     /**
      * Representation of the object in bytes.
