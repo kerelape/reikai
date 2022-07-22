@@ -14,6 +14,8 @@ import me.kerelape.reikai.core.Entity
 import me.kerelape.reikai.io.Channel
 import me.kerelape.reikai.io.Source
 import me.kerelape.reikai.logic.False
+import me.kerelape.reikai.text.Sprintf
+import me.kerelape.reikai.text.Text
 
 /**
  * Socket endpoint.
@@ -25,13 +27,10 @@ class TcpEndpoint(private val address: Entity, private val port: Entity) : Endpo
     /**
      * @todo #2 Create an object that converts quantum of
      *  a number to a quantum of a string.
-     * @todo #2 Create an object that can format texts like sprintf in EO.
-     *  This object must accept a quantum of text and an arbitrary amount
-     *  of arguments to fill the placeholders.
      * @return Its destination in format "address:port"
      */
     override suspend fun dataize(): ByteArray {
-        return "${String(this.address.dataize())}:${BigInteger(this.port.dataize())}".toByteArray()
+        return Sprintf(Text("%s:%s"), this.address, Text(BigInteger(this.port.dataize()).toString())).dataize()
     }
 
     /**
