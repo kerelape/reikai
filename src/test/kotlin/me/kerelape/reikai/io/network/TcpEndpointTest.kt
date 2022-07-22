@@ -19,10 +19,7 @@ class TcpEndpointTest {
      */
     @Test
     fun `test works`(): Unit = runBlocking {
-        val endpoint = TcpEndpoint(
-            "localhost".asEntity,
-            8080.asEntity
-        )
+        val endpoint = TcpEndpoint("localhost".asEntity, 8080.asEntity)
         val server = endpoint.listen()
         launch {
             val connection = server.open()
@@ -37,10 +34,7 @@ class TcpEndpointTest {
                 return byteArrayOf(32)
             }
         })
-        Assertions.assertEquals(
-            32.toByte(),
-            client.dataize()[0]
-        )
+        Assertions.assertEquals(32.toByte(), client.dataize()[0])
         server.close()
     }
 
