@@ -13,6 +13,7 @@ import kotlinx.coroutines.withContext
 import me.kerelape.reikai.core.Entity
 import me.kerelape.reikai.io.Channel
 import me.kerelape.reikai.io.Source
+import me.kerelape.reikai.logic.False
 
 /**
  * Socket endpoint.
@@ -73,5 +74,14 @@ class TcpEndpoint(private val address: Entity, private val port: Entity) : Endpo
             AsynchronousServerSocketChannel.open().bind(address)
         }
         return TcpSource(channel)
+    }
+
+    /**
+     * Does nothing.
+     *
+     * @return [False].
+     */
+    override suspend fun close(): Entity {
+        return False
     }
 }

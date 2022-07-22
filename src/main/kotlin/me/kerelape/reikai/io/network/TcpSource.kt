@@ -1,8 +1,12 @@
 package me.kerelape.reikai.io.network
 
-import java.nio.channels.AsynchronousServerSocketChannel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+import me.kerelape.reikai.core.Entity
+import me.kerelape.reikai.logic.True
 import me.kerelape.reikai.io.Channel
 import me.kerelape.reikai.io.Source
+import java.nio.channels.AsynchronousServerSocketChannel
 import java.nio.channels.AsynchronousSocketChannel
 import java.nio.channels.CompletionHandler
 import kotlin.coroutines.resume
@@ -38,5 +42,17 @@ class TcpSource(private val channel: AsynchronousServerSocketChannel) : Source {
                 }
             })
         }
+    }
+
+    /**
+     * Close the underlying [AsynchronousServerSocketChannel].
+     *
+     * @return [True]
+     */
+    override suspend fun close(): Entity {
+        withContext(Dispatchers.IO) {
+            this@TcpSource.channel.close()
+        }
+        return True
     }
 }
