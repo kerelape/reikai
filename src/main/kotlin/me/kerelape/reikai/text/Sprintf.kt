@@ -14,6 +14,6 @@ class Sprintf(private val template: Entity, private vararg val args: Entity): En
     override suspend fun dataize(): ByteArray {
         val template = String(this.template.dataize())
         val args = this.args.map { String(it.dataize()) }
-        return Text(template.format(args)).dataize()
+        return Text(template.format(*args.toTypedArray())).dataize()
     }
 }
