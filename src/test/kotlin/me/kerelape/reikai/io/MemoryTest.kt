@@ -12,7 +12,7 @@ import java.nio.ByteBuffer
  *
  * @since 0.0.0
  */
-class MemoryTests {
+class MemoryTest {
 
     /**
      * Test that it puts data correctly.

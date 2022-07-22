@@ -17,4 +17,13 @@ interface RandomAccessDestination : Entity {
      * @return The data that was put.
      */
     suspend fun put(position: Entity, data: Entity): Entity
+
+    /**
+     * Retrieve chunk of data.
+     *
+     * @param position Start position of the chunk.
+     * @param size Length of the chunk.
+     * @return Chunk of data.
+     */
+    suspend fun get(position: Entity, size: Entity): Entity
 }

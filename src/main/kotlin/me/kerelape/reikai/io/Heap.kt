@@ -1,8 +1,9 @@
 package me.kerelape.reikai.io
 
-import me.kerelape.reikai.core.Entity
 import java.math.BigInteger
 import java.nio.ByteBuffer
+import me.kerelape.reikai.core.Data
+import me.kerelape.reikai.core.Entity
 
 /**
  * Heap.
@@ -19,5 +20,12 @@ class Heap(private val buffer: ByteBuffer) : RandomAccessDestination {
         this.buffer.position(BigInteger(position.dataize()).toInt())
         this.buffer.put(data.dataize())
         return data
+    }
+
+    override suspend fun get(position: Entity, size: Entity): Entity {
+        val data = ByteArray(BigInteger(size.dataize()).toInt())
+        this.buffer.position(BigInteger(position.dataize()).toInt())
+        this.buffer.get(data)
+        return Data(data)
     }
 }

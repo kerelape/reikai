@@ -1,7 +1,6 @@
 package me.kerelape.reikai.io
 
 import me.kerelape.reikai.core.Entity
-import java.math.BigInteger
 
 /**
  * Mutable memory.
@@ -15,9 +14,7 @@ class Memory(
 ) : Destination {
 
     override suspend fun dataize(): ByteArray {
-        val position = BigInteger(this.position.dataize()).toInt()
-        val size = BigInteger(this.size.dataize()).toInt()
-        return this.origin.dataize().slice(position until (position + size)).toByteArray()
+        return this.origin.get(this.position, this.size).dataize()
     }
 
     override suspend fun put(data: Entity): Entity {
