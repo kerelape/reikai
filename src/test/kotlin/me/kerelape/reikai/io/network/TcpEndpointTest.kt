@@ -2,7 +2,7 @@ package me.kerelape.reikai.io.network
 
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import me.kerelape.reikai.core.Entity
+import me.kerelape.reikai.core.Data
 import me.kerelape.reikai.extentions.asEntity
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
@@ -26,14 +26,7 @@ class TcpEndpointTest {
             connection.put(connection)
         }
         val client = endpoint.open()
-        /*
-            @todo #9 We need to have a wrapper for ByteArray and replace this anonymous object with it
-         */
-        client.put(object : Entity {
-            override suspend fun dataize(): ByteArray {
-                return byteArrayOf(32)
-            }
-        })
+        client.put(Data(byteArrayOf(32)))
         Assertions.assertEquals(32.toByte(), client.dataize()[0])
         server.close()
     }
