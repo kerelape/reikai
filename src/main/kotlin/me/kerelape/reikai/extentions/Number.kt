@@ -4,7 +4,7 @@ import me.kerelape.reikai.core.Entity
 import me.kerelape.reikai.math.strict.Integer
 
 /**
- * Quantum representation of the number.
+ * Entity representation of the number.
  */
 val Number.asEntity: Entity
     get() = Integer(this.toLong())

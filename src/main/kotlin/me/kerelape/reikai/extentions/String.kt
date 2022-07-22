@@ -4,7 +4,7 @@ import me.kerelape.reikai.core.Entity
 import me.kerelape.reikai.text.Text
 
 /**
- * Quantum representation of the string.
+ * Entity representation of the string.
  */
 val String.asEntity: Entity
     get() = Text(this)
