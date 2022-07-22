@@ -41,7 +41,7 @@ class RandomAccessFileChannel(
         return suspendCoroutine { continuation ->
             this.channel.write(content, offset, content, object : CompletionHandler<Int, ByteBuffer> {
                 override fun completed(result: Int?, attachment: ByteBuffer) {
-                    continuation.resume(Data(attachment.array()))
+                    continuation.resume(Data(attachment))
                 }
 
                 override fun failed(exc: Throwable, attachment: ByteBuffer) {
@@ -58,7 +58,7 @@ class RandomAccessFileChannel(
             val content = ByteBuffer.allocateDirect(length)
             this.channel.read(content, offset, content, object : CompletionHandler<Int, ByteBuffer> {
                 override fun completed(result: Int?, attachment: ByteBuffer) {
-                    continuation.resume(Data(attachment.array()))
+                    continuation.resume(Data(attachment))
                 }
 
                 override fun failed(exc: Throwable, attachment: ByteBuffer) {
