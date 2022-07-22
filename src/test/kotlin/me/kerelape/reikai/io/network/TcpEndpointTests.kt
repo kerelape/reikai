@@ -23,14 +23,7 @@ class TcpEndpointTests {
     @Test
     fun `test works`(): Unit = runBlocking {
         val endpoint = TcpEndpoint(
-            /*
-                @todo #2 Create adapter for kotlin.String and replace this object with it
-             */
-            (object : Entity {
-                override suspend fun dataize(): ByteArray {
-                    return "localhost".toByteArray()
-                }
-            }),
+            "localhost".asEntity,
             8080.asEntity
         )
         val server = endpoint.listen()
@@ -53,11 +46,7 @@ class TcpEndpointTests {
             "localhost:8080",
             String(
                 TcpEndpoint(
-                    (object : Entity {
-                        override suspend fun dataize(): ByteArray {
-                            return "localhost".toByteArray()
-                        }
-                    }),
+                    "localhost".asEntity,
                     8080.asEntity
                 ).dataize()
             )
