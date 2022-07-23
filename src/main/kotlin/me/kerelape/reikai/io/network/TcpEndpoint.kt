@@ -23,8 +23,6 @@ import me.kerelape.reikai.logic.False
 class TcpEndpoint(private val address: Entity, private val port: Entity) : Endpoint {
 
     /**
-     * @todo #2 Create an object that converts quantum of
-     *  a number to a quantum of a string.
      * @todo #2 Create an object that can format texts like sprintf in EO.
      *  This object must accept a quantum of text and an arbitrary amount
      *  of arguments to fill the placeholders.
