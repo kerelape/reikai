@@ -25,8 +25,6 @@ import me.kerelape.reikai.text.Text
 class TcpEndpoint(private val address: Entity, private val port: Entity) : Endpoint {
 
     /**
-     * @todo #2 Create an object that converts quantum of
-     *  a number to a quantum of a string.
      * @return Its destination in format "address:port"
      */
     override suspend fun dataize(): ByteArray {
