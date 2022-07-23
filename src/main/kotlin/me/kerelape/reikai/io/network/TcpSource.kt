@@ -3,6 +3,7 @@ package me.kerelape.reikai.io.network
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import me.kerelape.reikai.core.Entity
+import me.kerelape.reikai.extentions.asEntity
 import me.kerelape.reikai.logic.True
 import me.kerelape.reikai.io.Channel
 import me.kerelape.reikai.io.Source
@@ -24,7 +25,7 @@ class TcpSource(private val channel: AsynchronousServerSocketChannel) : Source {
      * @return 1 or 0 depending on its state (1 for open, and 0 for closed)
      */
     override suspend fun dataize(): ByteArray {
-        return byteArrayOf((if (this.channel.isOpen) 1 else 0).toByte())
+        return this.channel.isOpen.asEntity.dataize()
     }
 
     /**
