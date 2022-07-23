@@ -29,7 +29,7 @@ SOFTWARE.
     <artifactId>parent</artifactId>
     <version>0.57.2</version>
   </parent>
-  <groupId>me.kerelape</groupId>
+  <groupId>org.reikai</groupId>
   <artifactId>reikai</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
