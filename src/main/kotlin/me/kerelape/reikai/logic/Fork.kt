@@ -10,5 +10,5 @@ import me.kerelape.reikai.core.EntityWrap
  * @since 0.0.0
  */
 class Fork(condition: Entity, value: Entity, fallback: Entity) : EntityWrap(Entity {
-    (if (BigInteger(condition.dataize()).toInt() == 0) { fallback } else { value }).dataize()
+    (if (BigInteger(condition.dataize()) == BigInteger.ZERO) fallback else value).dataize()
 })

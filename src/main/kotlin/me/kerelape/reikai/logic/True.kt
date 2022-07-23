@@ -8,4 +8,4 @@ import me.kerelape.reikai.core.EntityWrap
  *
  * @since 0.0.0
  */
-object True : EntityWrap(Entity { byteArrayOf(1) })
+object True : EntityWrap(Entity { byteArrayOf(-127) })
