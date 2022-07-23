@@ -18,8 +18,8 @@ class FalseTest {
     @Test
     fun `equals to false`() = runBlocking {
         Assertions.assertEquals(
-            false.asEntity.dataize(),
-            False.dataize()
+            false.asEntity.dataize()[0],
+            False.dataize()[0]
         )
     }
 }

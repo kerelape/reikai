@@ -18,8 +18,8 @@ class TrueTest {
     @Test
     fun `equals to true`() = runBlocking {
         Assertions.assertEquals(
-            true.asEntity.dataize(),
-            True.dataize()
+            true.asEntity.dataize()[0],
+            True.dataize()[0]
         )
     }
 }
