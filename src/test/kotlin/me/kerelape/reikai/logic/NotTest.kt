@@ -1,6 +1,7 @@
 package me.kerelape.reikai.logic
 
 import kotlinx.coroutines.runBlocking
+import me.kerelape.reikai.extentions.asEntity
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
@@ -17,11 +18,8 @@ class NotTest {
     @Test
     fun inverts() = runBlocking {
         Assertions.assertEquals(
-            Equality(
-                Not(True),
-                False
-            ).dataize()[0],
-            True.dataize()[0]
+            0.toByte(),
+            Not(Not(0.asEntity)).dataize()[0]
         )
     }
 }
