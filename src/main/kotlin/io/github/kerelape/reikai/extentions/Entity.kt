@@ -8,6 +8,6 @@ import java.math.BigInteger
  *
  * @since 0.0.0
  */
-suspend fun io.github.kerelape.reikai.core.Entity.toBoolean(): Boolean {
+suspend fun Entity.toBoolean(): Boolean {
     return BigInteger(this.dataize()) != BigInteger.ZERO
 }

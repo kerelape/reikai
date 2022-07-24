@@ -21,7 +21,7 @@ class Row : Destination {
      *
      * @return This object with [data] appended.
      */
-    override suspend fun put(data: io.github.kerelape.reikai.core.Entity): io.github.kerelape.reikai.core.Entity {
+    override suspend fun put(data: Entity): Entity {
         this.accumulator.addAll(data.dataize().toList())
         return this
     }

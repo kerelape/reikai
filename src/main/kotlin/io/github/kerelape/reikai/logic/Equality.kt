@@ -9,6 +9,6 @@ import java.math.BigInteger
  *
  * @since 0.0.0
  */
-class Equality(vararg entities: io.github.kerelape.reikai.core.Entity) : io.github.kerelape.reikai.core.EntityWrap(io.github.kerelape.reikai.core.Entity {
+class Equality(vararg entities: Entity) : EntityWrap(Entity {
     (if (BigInteger(Xor(*entities).dataize()) == BigInteger.ZERO) True else False).dataize()
 })

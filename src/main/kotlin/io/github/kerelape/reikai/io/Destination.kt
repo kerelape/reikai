@@ -7,7 +7,7 @@ import io.github.kerelape.reikai.core.Entity
  *
  * @since 0.0.0
  */
-interface Destination : io.github.kerelape.reikai.core.Entity {
+interface Destination : Entity {
 
     /**
      * Put arbitrary [data] to the destination.
@@ -15,5 +15,5 @@ interface Destination : io.github.kerelape.reikai.core.Entity {
      * @param data Arbitrary data.
      * @return The data that was put.
      */
-    suspend fun put(data: io.github.kerelape.reikai.core.Entity): io.github.kerelape.reikai.core.Entity
+    suspend fun put(data: Entity): Entity
 }

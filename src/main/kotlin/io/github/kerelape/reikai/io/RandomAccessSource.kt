@@ -7,7 +7,7 @@ import io.github.kerelape.reikai.core.Entity
  *
  * @since 0.0.0
  */
-interface RandomAccessSource : io.github.kerelape.reikai.core.Entity {
+interface RandomAccessSource : Entity {
 
     /**
      * Open channel.
@@ -21,5 +21,5 @@ interface RandomAccessSource : io.github.kerelape.reikai.core.Entity {
      *
      * @return Application.
      */
-    suspend fun close(): io.github.kerelape.reikai.core.Entity
+    suspend fun close(): Entity
 }

@@ -4,7 +4,12 @@ import io.github.kerelape.reikai.core.Entity
 import io.github.kerelape.reikai.core.EntityWrap
 import java.math.BigInteger
 
-class IntegerAsText(source: io.github.kerelape.reikai.core.Entity) : io.github.kerelape.reikai.core.EntityWrap(io.github.kerelape.reikai.core.Entity {
+/**
+ * 2 -> "2".
+ *
+ * @since 0.0.0
+ */
+class IntegerAsText(source: Entity) : EntityWrap(Entity {
     Text(
         BigInteger(source.dataize()).toString()
     ).dataize()

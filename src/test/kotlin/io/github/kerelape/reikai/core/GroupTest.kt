@@ -1,7 +1,7 @@
 package io.github.kerelape.reikai.core
 
+import io.github.kerelape.reikai.text.Text
 import kotlinx.coroutines.runBlocking
-import me.kerelape.reikai.text.Text
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
@@ -20,7 +20,7 @@ class GroupTest {
         Assertions.assertEquals(
             "Hello, World!",
             String(
-                io.github.kerelape.reikai.core.Group(
+                Group(
                     Text("Hello, "),
                     Text("World!")
                 ).dataize()

@@ -7,7 +7,7 @@ import io.github.kerelape.reikai.core.Entity
  *
  * @since 0.0.0
  */
-interface RandomAccessDestination : io.github.kerelape.reikai.core.Entity {
+interface RandomAccessDestination : Entity {
 
     /**
      * Put [data] and the [position].
@@ -16,7 +16,7 @@ interface RandomAccessDestination : io.github.kerelape.reikai.core.Entity {
      * @param data Data to put.
      * @return The data that was put.
      */
-    suspend fun put(position: io.github.kerelape.reikai.core.Entity, data: io.github.kerelape.reikai.core.Entity): io.github.kerelape.reikai.core.Entity
+    suspend fun put(position: Entity, data: Entity): Entity
 
     /**
      * Retrieve chunk of data.
@@ -25,5 +25,5 @@ interface RandomAccessDestination : io.github.kerelape.reikai.core.Entity {
      * @param size Length of the chunk.
      * @return Chunk of data.
      */
-    suspend fun get(position: io.github.kerelape.reikai.core.Entity, size: io.github.kerelape.reikai.core.Entity): io.github.kerelape.reikai.core.Entity
+    suspend fun get(position: Entity, size: Entity): Entity
 }

@@ -8,7 +8,7 @@ import java.nio.ByteBuffer
  *
  * @since 0.0.0
  */
-class Integer(private val origin: Long) : io.github.kerelape.reikai.core.Entity {
+class Integer(private val origin: Long) : Entity {
 
     /**
      * Converts [origin] to [ByteArray]

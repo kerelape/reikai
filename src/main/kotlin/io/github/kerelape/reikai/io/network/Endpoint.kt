@@ -1,6 +1,6 @@
 package io.github.kerelape.reikai.io.network
 
-import me.kerelape.reikai.io.Source
+import io.github.kerelape.reikai.io.Source
 
 /**
  * Endpoint.

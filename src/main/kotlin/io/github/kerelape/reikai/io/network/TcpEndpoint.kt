@@ -1,28 +1,28 @@
 package io.github.kerelape.reikai.io.network
 
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+import io.github.kerelape.reikai.core.Entity
+import io.github.kerelape.reikai.io.Channel
+import io.github.kerelape.reikai.io.Source
+import io.github.kerelape.reikai.logic.False
+import io.github.kerelape.reikai.text.Sprintf
+import io.github.kerelape.reikai.text.Text
+import java.math.BigInteger
 import java.net.InetSocketAddress
 import java.nio.channels.AsynchronousServerSocketChannel
 import java.nio.channels.AsynchronousSocketChannel
 import java.nio.channels.CompletionHandler
-import java.math.BigInteger
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
-import io.github.kerelape.reikai.core.Entity
-import me.kerelape.reikai.io.Channel
-import me.kerelape.reikai.io.Source
-import me.kerelape.reikai.logic.False
-import me.kerelape.reikai.text.Sprintf
-import me.kerelape.reikai.text.Text
 
 /**
  * Socket endpoint.
  *
  * @since 0.0.0
  */
-class TcpEndpoint(private val address: io.github.kerelape.reikai.core.Entity, private val port: io.github.kerelape.reikai.core.Entity) : Endpoint {
+class TcpEndpoint(private val address: Entity, private val port: Entity) : Endpoint {
 
     /**
      * @return Its destination in format "address:port"
@@ -78,7 +78,7 @@ class TcpEndpoint(private val address: io.github.kerelape.reikai.core.Entity, pr
      *
      * @return [False].
      */
-    override suspend fun close(): io.github.kerelape.reikai.core.Entity {
+    override suspend fun close(): Entity {
         return False
     }
 }

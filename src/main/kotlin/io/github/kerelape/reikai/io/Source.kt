@@ -7,7 +7,7 @@ import io.github.kerelape.reikai.core.Entity
  *
  * @since 0.0.0
  */
-interface Source : io.github.kerelape.reikai.core.Entity {
+interface Source : Entity {
 
     /**
      * Open a channel on this source.
@@ -19,5 +19,5 @@ interface Source : io.github.kerelape.reikai.core.Entity {
      *
      * @return Application.
      */
-    suspend fun close(): io.github.kerelape.reikai.core.Entity
+    suspend fun close(): Entity
 }

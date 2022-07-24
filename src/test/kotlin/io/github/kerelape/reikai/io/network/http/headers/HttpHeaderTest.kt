@@ -1,7 +1,7 @@
 package io.github.kerelape.reikai.io.network.http.headers
 
+import io.github.kerelape.reikai.text.Text
 import kotlinx.coroutines.runBlocking
-import me.kerelape.reikai.text.Text
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 

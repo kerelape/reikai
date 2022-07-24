@@ -6,5 +6,5 @@ import io.github.kerelape.reikai.core.Entity
 /**
  * Entity representation of the [ByteArray].
  */
-val ByteArray.asEntity: io.github.kerelape.reikai.core.Entity
-    get() = io.github.kerelape.reikai.core.Data(this)
+val ByteArray.asEntity: Entity
+    get() = Data(this)

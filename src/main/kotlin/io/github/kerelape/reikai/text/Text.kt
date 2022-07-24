@@ -7,7 +7,7 @@ import io.github.kerelape.reikai.core.Entity
  *
  * @since 0.0.0
  */
-class Text(private val origin: String) : io.github.kerelape.reikai.core.Entity {
+class Text(private val origin: String) : Entity {
 
     /**
      * Converts [origin] to [ByteArray]

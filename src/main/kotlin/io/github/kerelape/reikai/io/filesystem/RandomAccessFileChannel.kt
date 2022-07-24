@@ -4,9 +4,9 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import io.github.kerelape.reikai.core.Data
 import io.github.kerelape.reikai.core.Entity
-import me.kerelape.reikai.extentions.asEntity
-import me.kerelape.reikai.io.RandomAccessChannel
-import me.kerelape.reikai.io.RandomAccessSource
+import io.github.kerelape.reikai.extentions.asEntity
+import io.github.kerelape.reikai.io.RandomAccessChannel
+import io.github.kerelape.reikai.io.RandomAccessSource
 import java.math.BigInteger
 import java.nio.ByteBuffer
 import java.nio.channels.AsynchronousFileChannel
@@ -35,13 +35,13 @@ class RandomAccessFileChannel(
         return this.get(0.asEntity, length.asEntity).dataize()
     }
 
-    override suspend fun put(position: io.github.kerelape.reikai.core.Entity, data: io.github.kerelape.reikai.core.Entity): io.github.kerelape.reikai.core.Entity {
+    override suspend fun put(position: Entity, data: Entity): Entity {
         val content = ByteBuffer.wrap(data.dataize())
         val offset = BigInteger(position.dataize()).toLong()
         return suspendCoroutine { continuation ->
             this.channel.write(content, offset, content, object : CompletionHandler<Int, ByteBuffer> {
                 override fun completed(result: Int?, attachment: ByteBuffer) {
-                    continuation.resume(io.github.kerelape.reikai.core.Data(attachment))
+                    continuation.resume(Data(attachment))
                 }
 
                 override fun failed(exc: Throwable, attachment: ByteBuffer) {
@@ -51,14 +51,14 @@ class RandomAccessFileChannel(
         }
     }
 
-    override suspend fun get(position: io.github.kerelape.reikai.core.Entity, size: io.github.kerelape.reikai.core.Entity): io.github.kerelape.reikai.core.Entity {
+    override suspend fun get(position: Entity, size: Entity): Entity {
         val offset = BigInteger(position.dataize()).toLong()
         val length = BigInteger(size.dataize()).toInt()
         return suspendCoroutine { continuation ->
             val content = ByteBuffer.allocateDirect(length)
             this.channel.read(content, offset, content, object : CompletionHandler<Int, ByteBuffer> {
                 override fun completed(result: Int?, attachment: ByteBuffer) {
-                    continuation.resume(io.github.kerelape.reikai.core.Data(attachment))
+                    continuation.resume(Data(attachment))
                 }
 
                 override fun failed(exc: Throwable, attachment: ByteBuffer) {

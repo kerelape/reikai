@@ -7,11 +7,11 @@ import java.nio.ByteBuffer
  *
  * @since 0.0.0
  */
-class Data(bytes: io.github.kerelape.reikai.core.Entity) : io.github.kerelape.reikai.core.EntityWrap(bytes) {
+class Data(bytes: Entity) : EntityWrap(bytes) {
 
-    constructor(bytes: ByteArray) : this(io.github.kerelape.reikai.core.Entity { bytes })
+    constructor(bytes: ByteArray) : this(Entity { bytes })
 
-    constructor(buffer: ByteBuffer) : this(io.github.kerelape.reikai.core.Entity {
+    constructor(buffer: ByteBuffer) : this(Entity {
         ByteArray(buffer.limit()) { buffer.get(it) }
     })
 }

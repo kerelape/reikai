@@ -7,4 +7,4 @@ import io.github.kerelape.reikai.core.EntityWrap
  *
  * @since 0.0.0
  */
-object Space : io.github.kerelape.reikai.core.EntityWrap(Text(" "))
+object Space : EntityWrap(Text(" "))

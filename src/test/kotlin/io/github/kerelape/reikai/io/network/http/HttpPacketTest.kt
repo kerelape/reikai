@@ -1,10 +1,10 @@
 package io.github.kerelape.reikai.io.network.http
 
+import io.github.kerelape.reikai.core.Length
+import io.github.kerelape.reikai.io.network.http.headers.ContentLength
+import io.github.kerelape.reikai.io.network.http.request.HttpGetPacketHeader
+import io.github.kerelape.reikai.text.Text
 import kotlinx.coroutines.runBlocking
-import me.kerelape.reikai.core.Length
-import me.kerelape.reikai.io.network.http.headers.ContentLength
-import me.kerelape.reikai.io.network.http.request.HttpGetPacketHeader
-import me.kerelape.reikai.text.Text
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 

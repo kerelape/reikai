@@ -5,4 +5,4 @@ package io.github.kerelape.reikai.core
  *
  * @since 0.0.0
  */
-abstract class EntityWrap(wrap: io.github.kerelape.reikai.core.Entity) : io.github.kerelape.reikai.core.Entity by wrap
+abstract class EntityWrap(wrap: Entity) : Entity by wrap

@@ -1,9 +1,9 @@
 package io.github.kerelape.reikai.text
 
+import io.github.kerelape.reikai.extentions.asEntity
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import kotlinx.coroutines.runBlocking
-import me.kerelape.reikai.extentions.asEntity
 
 /**
  * Test cases for [IntegerAsText].

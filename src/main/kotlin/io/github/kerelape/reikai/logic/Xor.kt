@@ -1,14 +1,14 @@
 package io.github.kerelape.reikai.logic
 
-import java.math.BigInteger
 import io.github.kerelape.reikai.core.Entity
+import java.math.BigInteger
 
 /**
  * Xor.
  *
  * @since 0.0.0
  */
-class Xor(private vararg val elements: io.github.kerelape.reikai.core.Entity) : io.github.kerelape.reikai.core.Entity {
+class Xor(private vararg val elements: Entity) : Entity {
 
     override suspend fun dataize(): ByteArray {
         if (this.elements.size < 2) {

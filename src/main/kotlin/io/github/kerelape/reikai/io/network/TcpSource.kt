@@ -2,11 +2,10 @@ package io.github.kerelape.reikai.io.network
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import io.github.kerelape.reikai.core.Entity
-import me.kerelape.reikai.extentions.asEntity
-import me.kerelape.reikai.logic.True
-import me.kerelape.reikai.io.Channel
-import me.kerelape.reikai.io.Source
+import io.github.kerelape.reikai.extentions.asEntity
+import io.github.kerelape.reikai.io.Channel
+import io.github.kerelape.reikai.io.Source
+import io.github.kerelape.reikai.logic.True
 import java.nio.channels.AsynchronousServerSocketChannel
 import java.nio.channels.AsynchronousSocketChannel
 import java.nio.channels.CompletionHandler

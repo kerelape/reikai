@@ -1,9 +1,9 @@
 package io.github.kerelape.reikai.logic
 
+import io.github.kerelape.reikai.extentions.asEntity
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
-import me.kerelape.reikai.extentions.asEntity
 
 /**
  * Test cases for [False].

@@ -2,8 +2,8 @@ package io.github.kerelape.reikai.io.network.http.headers
 
 import io.github.kerelape.reikai.core.Entity
 import io.github.kerelape.reikai.core.EntityWrap
-import me.kerelape.reikai.text.IntegerAsText
-import me.kerelape.reikai.text.Text
+import io.github.kerelape.reikai.text.IntegerAsText
+import io.github.kerelape.reikai.text.Text
 
 /**
  * Content-Length.
@@ -12,6 +12,6 @@ import me.kerelape.reikai.text.Text
  *
  * @since 0.0.0
  */
-class ContentLength(length: io.github.kerelape.reikai.core.Entity) : io.github.kerelape.reikai.core.EntityWrap(
+class ContentLength(length: Entity) : EntityWrap(
     HttpHeader(Text("Content-Length"), IntegerAsText(length))
 )

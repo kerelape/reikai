@@ -1,9 +1,9 @@
 package io.github.kerelape.reikai.io.filesystem
 
 import kotlinx.coroutines.runBlocking
-import me.kerelape.reikai.extentions.asEntity
-import me.kerelape.reikai.io.Memory
-import me.kerelape.reikai.text.Text
+import io.github.kerelape.reikai.extentions.asEntity
+import io.github.kerelape.reikai.io.Memory
+import io.github.kerelape.reikai.text.Text
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.io.TempDir

@@ -1,6 +1,7 @@
 package io.github.kerelape.reikai.text
 
 import io.github.kerelape.reikai.core.Entity
+import io.github.kerelape.reikai.core.EntityWrap
 
 /**
  * Sprintf.
@@ -9,12 +10,8 @@ import io.github.kerelape.reikai.core.Entity
  *
  * @since 0.0.0
  */
-class Sprintf(private val template: io.github.kerelape.reikai.core.Entity, private vararg val args: io.github.kerelape.reikai.core.Entity):
-    io.github.kerelape.reikai.core.Entity {
-
-    override suspend fun dataize(): ByteArray {
-        val template = String(this.template.dataize())
-        val args = this.args.map { String(it.dataize()) }
-        return Text(template.format(*args.toTypedArray())).dataize()
-    }
-}
+class Sprintf(template: Entity, vararg args: Entity) : EntityWrap(Entity {
+    val template = String(template.dataize())
+    val args = args.map { String(it.dataize()) }
+    Text(template.format(*args.toTypedArray())).dataize()
+})

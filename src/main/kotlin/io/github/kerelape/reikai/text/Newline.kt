@@ -7,4 +7,4 @@ import io.github.kerelape.reikai.core.EntityWrap
  *
  * @since 0.0.0
  */
-object Newline : io.github.kerelape.reikai.core.EntityWrap(Text("\r\n"))
+object Newline : EntityWrap(Text("\r\n"))

@@ -3,7 +3,7 @@ package io.github.kerelape.reikai.io.network
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import io.github.kerelape.reikai.core.Data
-import me.kerelape.reikai.extentions.asEntity
+import io.github.kerelape.reikai.extentions.asEntity
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
@@ -26,7 +26,7 @@ class TcpEndpointTest {
             connection.put(connection)
         }
         val client = endpoint.open()
-        client.put(io.github.kerelape.reikai.core.Data(byteArrayOf(32)))
+        client.put(Data(byteArrayOf(32)))
         Assertions.assertEquals(32.toByte(), client.dataize()[0])
         server.close()
     }

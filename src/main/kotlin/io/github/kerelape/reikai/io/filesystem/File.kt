@@ -3,9 +3,9 @@ package io.github.kerelape.reikai.io.filesystem
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import io.github.kerelape.reikai.core.Entity
-import me.kerelape.reikai.io.RandomAccessChannel
-import me.kerelape.reikai.io.RandomAccessSource
-import me.kerelape.reikai.logic.False
+import io.github.kerelape.reikai.io.RandomAccessChannel
+import io.github.kerelape.reikai.io.RandomAccessSource
+import io.github.kerelape.reikai.logic.False
 import java.nio.channels.AsynchronousFileChannel
 import java.nio.file.OpenOption
 import java.nio.file.Path
@@ -15,7 +15,7 @@ import java.nio.file.Path
  *
  * @since 0.0.0
  */
-class File(private val path: io.github.kerelape.reikai.core.Entity, private vararg val options: OpenOption) : RandomAccessSource {
+class File(private val path: Entity, private vararg val options: OpenOption) : RandomAccessSource {
 
     /**
      * @return Path to the file.
@@ -37,7 +37,7 @@ class File(private val path: io.github.kerelape.reikai.core.Entity, private vara
      *
      * @return [False].
      */
-    override suspend fun close(): io.github.kerelape.reikai.core.Entity {
+    override suspend fun close(): Entity {
         return False
     }
 }

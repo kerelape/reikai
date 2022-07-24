@@ -1,10 +1,10 @@
 package io.github.kerelape.reikai.extentions
 
 import io.github.kerelape.reikai.core.Entity
-import me.kerelape.reikai.math.strict.Integer
+import io.github.kerelape.reikai.math.strict.Integer
 
 /**
  * Entity representation of the number.
  */
-val Number.asEntity: io.github.kerelape.reikai.core.Entity
+val Number.asEntity: Entity
     get() = Integer(this.toLong())

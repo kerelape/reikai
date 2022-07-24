@@ -2,10 +2,10 @@ package io.github.kerelape.reikai.io.network.http
 
 import io.github.kerelape.reikai.core.Data
 import io.github.kerelape.reikai.core.Entity
-import me.kerelape.reikai.extentions.asEntity
-import me.kerelape.reikai.io.Channel
-import me.kerelape.reikai.io.Row
-import me.kerelape.reikai.io.Source
+import io.github.kerelape.reikai.extentions.asEntity
+import io.github.kerelape.reikai.io.Channel
+import io.github.kerelape.reikai.io.Row
+import io.github.kerelape.reikai.io.Source
 
 /**
  * HTTP channel.
@@ -24,7 +24,7 @@ class HttpChannel(private val transport: Channel, private val parent: Source) : 
             if (chunk.last() == 0.toByte()) {
                 break
             }
-            request.put(io.github.kerelape.reikai.core.Data(chunk))
+            request.put(Data(chunk))
         }
         return request.dataize()
     }
@@ -34,7 +34,7 @@ class HttpChannel(private val transport: Channel, private val parent: Source) : 
      *
      * @return Response.
      */
-    override suspend fun put(data: io.github.kerelape.reikai.core.Entity): io.github.kerelape.reikai.core.Entity {
+    override suspend fun put(data: Entity): Entity {
         this.transport.put(data)
         this.transport.put(0.asEntity)
         return this

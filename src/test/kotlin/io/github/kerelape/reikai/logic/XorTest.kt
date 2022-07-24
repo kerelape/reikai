@@ -1,7 +1,7 @@
 package io.github.kerelape.reikai.logic
 
+import io.github.kerelape.reikai.extentions.asEntity
 import kotlinx.coroutines.runBlocking
-import me.kerelape.reikai.extentions.asEntity
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import java.math.BigInteger

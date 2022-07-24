@@ -1,16 +1,16 @@
 package io.github.kerelape.reikai.io.network
 
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+import io.github.kerelape.reikai.core.Entity
+import io.github.kerelape.reikai.io.Channel
+import io.github.kerelape.reikai.io.Source
 import java.nio.ByteBuffer
 import java.nio.channels.AsynchronousSocketChannel
 import java.nio.channels.CompletionHandler
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
-import io.github.kerelape.reikai.core.Entity
-import me.kerelape.reikai.io.Channel
-import me.kerelape.reikai.io.Source
 
 /**
  * TCP destination.
@@ -45,7 +45,7 @@ class TcpChannel(private val socket: AsynchronousSocketChannel, private val pare
      *
      * @return [data].
      */
-    override suspend fun put(data: io.github.kerelape.reikai.core.Entity): io.github.kerelape.reikai.core.Entity {
+    override suspend fun put(data: Entity): Entity {
         val bytes = data.dataize()
         return suspendCoroutine { continuation ->
             this.socket.write(ByteBuffer.wrap(bytes), null, object : CompletionHandler<Int, Unit?> {

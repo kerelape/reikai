@@ -8,4 +8,4 @@ import io.github.kerelape.reikai.core.EntityWrap
  *
  * @since 0.0.0
  */
-object False : io.github.kerelape.reikai.core.EntityWrap(io.github.kerelape.reikai.core.Entity { byteArrayOf(0) })
+object False : EntityWrap(Entity { byteArrayOf(0) })
