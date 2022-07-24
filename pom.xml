@@ -48,6 +48,13 @@ SOFTWARE.
       </roles>
       <timezone>+5</timezone>
     </developer>
+    <developer>
+      <id>2</id>
+      <name>Masynchin</name>
+      <roles>
+        <role>Developer</role>
+      </roles>
+    </developer>
   </developers>
   <issueManagement>
     <system>GitHub</system>
