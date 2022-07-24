@@ -6,6 +6,7 @@ import io.github.kerelape.reikai.core.Entity
 import io.github.kerelape.reikai.io.Channel
 import io.github.kerelape.reikai.io.Source
 import io.github.kerelape.reikai.logic.False
+import io.github.kerelape.reikai.text.IntegerAsText
 import io.github.kerelape.reikai.text.Sprintf
 import io.github.kerelape.reikai.text.Text
 import java.math.BigInteger
@@ -28,7 +29,7 @@ class TcpEndpoint(private val address: Entity, private val port: Entity) : Endpo
      * @return Its destination in format "address:port"
      */
     override suspend fun dataize(): ByteArray {
-        return Sprintf(Text("%s:%s"), this.address, Text(BigInteger(this.port.dataize()).toString())).dataize()
+        return Sprintf(Text("%s:%s"), this.address, IntegerAsText(this.port)).dataize()
     }
 
     /**
