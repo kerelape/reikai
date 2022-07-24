@@ -29,13 +29,13 @@ SOFTWARE.
     <artifactId>parent</artifactId>
     <version>0.57.2</version>
   </parent>
-  <groupId>me.kerelape</groupId>
+  <groupId>io.github.kerelape</groupId>
   <artifactId>reikai</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
   <name>reikai</name>
   <description>Reikai OOP Library</description>
-  <url>https://github.com/kerelape/quantum-design</url>
+  <url>https://github.com/kerelape/reikai</url>
   <inceptionYear>2022</inceptionYear>
   <developers>
     <developer>
