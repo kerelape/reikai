@@ -19,9 +19,7 @@ import java.nio.ByteBuffer
 class HttpChannel(private val transport: Channel, private val parent: Source) : Channel {
 
     /**
-     * Read the request.
-     *
-     * @return The hole request.
+     * @return Content from the endpoint.
      */
     override suspend fun dataize(): ByteArray {
         val request = Row(
@@ -43,17 +41,14 @@ class HttpChannel(private val transport: Channel, private val parent: Source) : 
     }
 
     /**
-     * Put the response ([data]) and close the channel.
+     * Put the [data] to the endpoint.
      *
-     * @param data Response.
+     * @return Response.
      */
     override suspend fun put(data: Entity): Entity {
-        return try {
-            this.transport.put(data)
-            this.transport.put(0.asEntity)
-        } finally {
-            this.transport.close()
-        }
+        this.transport.put(data)
+        this.transport.put(0.asEntity)
+        return this
     }
 
     /**
