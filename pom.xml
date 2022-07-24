@@ -31,7 +31,7 @@ SOFTWARE.
   </parent>
   <groupId>io.github.kerelape</groupId>
   <artifactId>reikai</artifactId>
-  <version>1.0.0</version>
+  <version>0.0.1</version>
   <packaging>jar</packaging>
   <name>reikai</name>
   <description>Reikai OOP Library</description>
