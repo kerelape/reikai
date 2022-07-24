@@ -20,13 +20,13 @@ import me.kerelape.reikai.io.Source
 class TcpChannel(private val socket: AsynchronousSocketChannel, private val parent: Source) : Channel {
 
     /**
-     * Read next byte from the socket.
+     * Read next chunk of data from the socket.
      *
-     * @return The next byte in the socket channel.
+     * @return The next chunk (1024 bytes).
      */
     override suspend fun dataize(): ByteArray {
         return suspendCoroutine { continuation ->
-            with(ByteBuffer.allocate(1)) {
+            with(ByteBuffer.allocate(1024)) {
                 this@TcpChannel.socket.read(this, this, object : CompletionHandler<Int, ByteBuffer> {
                     override fun completed(result: Int, attachment: ByteBuffer) {
                         continuation.resume(attachment.array())
