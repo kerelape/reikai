@@ -24,7 +24,7 @@ internal class HttpPacketTest {
             """
                 GET / HTTP/1.1
                 Content-Length: 13
-                
+
                 Hello, World!
             """.trimIndent().replace("\n", "\r\n"),
             String(
