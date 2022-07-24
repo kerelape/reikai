@@ -1,5 +1,15 @@
+assets:
+  settings.xml: kerelape/reikai-secrets#settings.xml
+  pubring.gpg: kerelape/reikai-secrets#pubring.gpg
+  secring.gpg: kerelape/reikai-secrets#secring.gpg
 install: |
   pdd --file=/dev/null
 merge:
   script: |
     mvn clean install -Pqulice --errors -Dstyle.color=never
+release:
+  script: |-
+    mvn versions:set "-DnewVersion=${tag}" -Dstyle.color=never
+    git commit -am "${tag}"
+    mvn clean install -Dinvoker.skip -Pqulice
+    mvn clean deploy --errors --settings ../settings.xml -Dstyle.color=never
