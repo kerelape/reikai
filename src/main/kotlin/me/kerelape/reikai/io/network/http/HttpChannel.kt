@@ -22,7 +22,7 @@ class HttpChannel(private val transport: Channel, private val parent: Source) : 
      * @return Content from the endpoint.
      */
     override suspend fun dataize(): ByteArray {
-        val request = Row(DynamicHeap(), Memory(Heap(ByteBuffer.wrap(0.asEntity.dataize()))))
+        val request = Row()
         while (true) {
             val chunk = this.transport.dataize()
             if (chunk.last() == 0.toByte()) {

@@ -1,28 +1,28 @@
 package me.kerelape.reikai.io
 
 import me.kerelape.reikai.core.Entity
-import me.kerelape.reikai.core.EntityWrap
-import me.kerelape.reikai.core.Length
-import me.kerelape.reikai.math.strict.Sum
 
 /**
  * Sequence of data.
  *
+ * @todo #30 Make use of Random Access Destination instead of Array List.
+ *  The destination must be passed through the constructor.
  * @since 0.0.0
  */
-class Row(
-    private val origin: RandomAccessDestination,
-    private val pointer: Destination
-) : EntityWrap(origin), Destination {
+class Row : Destination {
+    private val accumulator = arrayListOf<Byte>()
+
+    override suspend fun dataize(): ByteArray {
+        return this.accumulator.toByteArray()
+    }
 
     /**
-     * Append [data] to the [origin] detination.
+     * Append [data].
      *
-     * @return Next position.
+     * @return This object with [data] appended.
      */
     override suspend fun put(data: Entity): Entity {
-        this.origin.put(this.pointer, data)
-        this.pointer.put(Sum(this.pointer, Length(data)))
-        return pointer
+        this.accumulator.addAll(data.dataize().toList())
+        return this
     }
 }
