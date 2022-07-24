@@ -8,6 +8,8 @@ import me.kerelape.reikai.text.Text
 /**
  * Content-Length.
  *
+ * @param length Entity of integer type.
+ *
  * @since 0.0.0
  */
 class ContentLength(length: Entity) : EntityWrap(
