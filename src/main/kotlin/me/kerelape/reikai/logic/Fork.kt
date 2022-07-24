@@ -1,6 +1,5 @@
 package me.kerelape.reikai.logic
 
-import java.math.BigInteger
 import me.kerelape.reikai.core.Entity
 import me.kerelape.reikai.core.EntityWrap
 
@@ -10,5 +9,5 @@ import me.kerelape.reikai.core.EntityWrap
  * @since 0.0.0
  */
 class Fork(condition: Entity, value: Entity, fallback: Entity) : EntityWrap(Entity {
-    (if (BigInteger(condition.dataize()) == BigInteger.ZERO) fallback else value).dataize()
+    (if (condition.dataize().contentEquals(False.dataize())) fallback else value).dataize()
 })
