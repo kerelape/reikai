@@ -51,9 +51,11 @@ SOFTWARE.
     <developer>
       <id>2</id>
       <name>Masynchin</name>
+      <email>masynchin@gmail.com</email>
       <roles>
         <role>Developer</role>
       </roles>
+      <timezone>+3</timezone>
     </developer>
   </developers>
   <issueManagement>
