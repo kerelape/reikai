@@ -7,7 +7,6 @@ package me.kerelape.reikai.core
  */
 class Group(vararg items: Entity) : EntityWrap(Entity {
     items
-        .map { it.dataize().toList() }
+        .map { it.dataize() }
         .reduce { acc, bytes -> acc.plus(bytes) }
-        .toByteArray()
 })
