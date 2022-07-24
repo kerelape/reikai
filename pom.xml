@@ -70,10 +70,11 @@ SOFTWARE.
     <url>https://www.rultor.com/s/reikai</url>
   </ciManagement>
   <distributionManagement>
-    <site>
-      <id>github-pages</id>
-      <url>https://github.com/kerelape/reikai</url>
-    </site>
+    <repository>
+      <id>github</id>
+      <name>GitHub kerelape Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/kerelape/reikai</url>
+    </repository>
   </distributionManagement>
   <properties>
     <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
