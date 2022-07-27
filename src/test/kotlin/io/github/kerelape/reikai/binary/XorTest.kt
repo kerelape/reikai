@@ -1,4 +1,4 @@
-package io.github.kerelape.reikai.logic
+package io.github.kerelape.reikai.binary
 
 import io.github.kerelape.reikai.extentions.asEntity
 import kotlinx.coroutines.runBlocking
