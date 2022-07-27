@@ -13,10 +13,8 @@ class And(vararg elements: Entity) : EntityWrap(Entity {
     if (elements.size < 2) {
         throw IllegalStateException("elements must contain at least 2 entities")
     }
-    var previous = elements[0].dataize()
-    for (index in 1 until elements.size) {
-        val next = BigInteger(elements[index].dataize())
-        previous = BigInteger(previous).and(next).toByteArray()
-    }
-    previous
+    elements
+        .map { BigInteger(it.dataize()) }
+        .reduce { a, b -> a.and(b) }
+        .toByteArray()
 })
