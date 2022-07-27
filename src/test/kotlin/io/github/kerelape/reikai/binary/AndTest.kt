@@ -1,7 +1,7 @@
 package io.github.kerelape.reikai.binary
 
 import io.github.kerelape.reikai.extentions.asEntity
-import io.github.kerelape.reikai.logic.Xor
+import io.github.kerelape.reikai.binary.Xor
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
