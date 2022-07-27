@@ -9,5 +9,9 @@ import java.math.BigInteger
  * @since 0.0.0
  */
 suspend fun Entity.toBoolean(): Boolean {
-    return BigInteger(this.dataize()) != BigInteger.ZERO
+    return try {
+        BigInteger(this.dataize()) != BigInteger.ZERO
+    } catch (exception: NumberFormatException) {
+        false
+    }
 }
