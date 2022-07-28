@@ -144,6 +144,14 @@ $dokka.location:io.github.kerelape.reikai.text/Sprintf///PointingToDeclaration/
 $dokka.location:io.github.kerelape.reikai.text/Sprintf/Sprintf/#io.github.kerelape.reikai.core.Entity#kotlin.Array[io.github.kerelape.reikai.core.Entity]/PointingToDeclaration/reikai/io.github.kerelape.reikai.text/-sprintf/-sprintf.html
 $dokka.location:io.github.kerelape.reikai.text/Text///PointingToDeclaration/reikai/io.github.kerelape.reikai.text/-text/index.html
 $dokka.location:io.github.kerelape.reikai.text/Text/Text/#kotlin.String/PointingToDeclaration/reikai/io.github.kerelape.reikai.text/-text/-text.html
+$dokka.location:io.github.kerelape.reikai.typing////PointingToDeclaration/reikai/io.github.kerelape.reikai.typing/index.html
+$dokka.location:io.github.kerelape.reikai.typing/Strict///PointingToDeclaration/reikai/io.github.kerelape.reikai.typing/-strict/index.html
+$dokka.location:io.github.kerelape.reikai.typing/Strict/Strict/#io.github.kerelape.reikai.typing.Type/PointingToDeclaration/reikai/io.github.kerelape.reikai.typing/-strict/-strict.html
+$dokka.location:io.github.kerelape.reikai.typing/Strict/type/#/PointingToDeclaration/reikai/io.github.kerelape.reikai.typing/-strict/type.html
+$dokka.location:io.github.kerelape.reikai.typing/Type.BOOLEAN///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}reikai/io.github.kerelape.reikai.typing/-type/-b-o-o-l-e-a-n/index.html
+$dokka.location:io.github.kerelape.reikai.typing/Type.INTEGER///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}reikai/io.github.kerelape.reikai.typing/-type/-i-n-t-e-g-e-r/index.html
+$dokka.location:io.github.kerelape.reikai.typing/Type.TEXT///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}reikai/io.github.kerelape.reikai.typing/-type/-t-e-x-t/index.html
+$dokka.location:io.github.kerelape.reikai.typing/Type///PointingToDeclaration/reikai/io.github.kerelape.reikai.typing/-type/index.html
 io.github.kerelape.reikai.binary
 io.github.kerelape.reikai.core
 io.github.kerelape.reikai.io
@@ -156,4 +164,5 @@ io.github.kerelape.reikai.logic
 io.github.kerelape.reikai.math
 io.github.kerelape.reikai.math.strict
 io.github.kerelape.reikai.text
+io.github.kerelape.reikai.typing
 

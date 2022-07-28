@@ -26,4 +26,5 @@ title: reikai
 | [io.github.kerelape.reikai.math](reikai/io.github.kerelape.reikai.math/index.html) |
 | [io.github.kerelape.reikai.math.strict](reikai/io.github.kerelape.reikai.math.strict/index.html) |
 | [io.github.kerelape.reikai.text](reikai/io.github.kerelape.reikai.text/index.html) |
+| [io.github.kerelape.reikai.typing](reikai/io.github.kerelape.reikai.typing/index.html) |
 
