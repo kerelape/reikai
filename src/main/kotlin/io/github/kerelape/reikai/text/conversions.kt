@@ -1,7 +1,6 @@
-package io.github.kerelape.reikai.extentions
+package io.github.kerelape.reikai.text
 
 import io.github.kerelape.reikai.core.Entity
-import io.github.kerelape.reikai.text.Text
 
 /**
  * Entity representation of the string.

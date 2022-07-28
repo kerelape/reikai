@@ -4,6 +4,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import io.github.kerelape.reikai.core.Data
 import io.github.kerelape.reikai.extentions.asEntity
+import io.github.kerelape.reikai.text.asEntity
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
