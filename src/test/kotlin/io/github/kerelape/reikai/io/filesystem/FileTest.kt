@@ -1,6 +1,6 @@
 package io.github.kerelape.reikai.io.filesystem
 
-import io.github.kerelape.reikai.extentions.asEntity
+import io.github.kerelape.reikai.math.asEntity
 import kotlinx.coroutines.runBlocking
 import io.github.kerelape.reikai.io.Memory
 import io.github.kerelape.reikai.text.Text

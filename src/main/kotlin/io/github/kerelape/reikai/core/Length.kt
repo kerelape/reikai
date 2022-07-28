@@ -1,6 +1,6 @@
 package io.github.kerelape.reikai.core
 
-import io.github.kerelape.reikai.logic.asEntity
+import io.github.kerelape.reikai.math.asEntity
 
 /**
  * Length of the entity.

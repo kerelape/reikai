@@ -1,4 +1,4 @@
-package io.github.kerelape.reikai.extentions
+package io.github.kerelape.reikai.math
 
 import io.github.kerelape.reikai.core.Entity
 import io.github.kerelape.reikai.math.strict.Integer

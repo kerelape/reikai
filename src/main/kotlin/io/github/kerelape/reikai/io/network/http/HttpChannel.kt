@@ -2,10 +2,10 @@ package io.github.kerelape.reikai.io.network.http
 
 import io.github.kerelape.reikai.core.Data
 import io.github.kerelape.reikai.core.Entity
-import io.github.kerelape.reikai.logic.asEntity
 import io.github.kerelape.reikai.io.Channel
 import io.github.kerelape.reikai.io.Row
 import io.github.kerelape.reikai.io.Source
+import io.github.kerelape.reikai.math.asEntity
 
 /**
  * HTTP channel.

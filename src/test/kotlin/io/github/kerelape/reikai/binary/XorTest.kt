@@ -1,6 +1,6 @@
 package io.github.kerelape.reikai.binary
 
-import io.github.kerelape.reikai.extentions.asEntity
+import io.github.kerelape.reikai.math.asEntity
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
