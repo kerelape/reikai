@@ -1,8 +1,8 @@
-package io.github.kerelape.reikai.extentions
+package io.github.kerelape.reikai.logic
 
 import io.github.kerelape.reikai.core.Data
 import io.github.kerelape.reikai.core.Empty
-import io.github.kerelape.reikai.logic.toBoolean
+import io.github.kerelape.reikai.extentions.asEntity
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test
  *
  * @since 0.0.0
  */
-internal class EntityExtensionsTest {
+internal class ConversionsTest {
 
     /**
      * Test that [toBoolean] converts to true correctly.
