@@ -4,10 +4,10 @@ install: |
   pdd --file=/dev/null
 merge:
   script: |
-    mvn clean install -Pqulice --errors -Dstyle.color=never
+    mvn clean test verify --errors -Dstyle.color=never
 release:
   script: |-
     mvn versions:set "-DnewVersion=${tag}" -Dstyle.color=never
     git commit -am "${tag}"
-    mvn clean install -Dinvoker.skip -Pqulice
+    mvn clean test verify install -Dinvoker.skip
     mvn clean deploy --errors --settings ../settings.xml -Dstyle.color=never

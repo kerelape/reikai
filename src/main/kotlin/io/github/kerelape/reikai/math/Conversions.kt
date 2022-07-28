@@ -21,16 +21,13 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package io.github.kerelape.reikai.typing
+package io.github.kerelape.reikai.math
+
+import io.github.kerelape.reikai.core.Entity
+import io.github.kerelape.reikai.math.strict.Integer
 
 /**
- * Describes type of data.
- *
- * @todo #71 Create a ktlint check. This check will throw a warning if types differ.
- * @since 0.1.0
+ * Entity representation of the number.
  */
-@Target(
-    AnnotationTarget.CLASS,
-    AnnotationTarget.VALUE_PARAMETER
-)
-annotation class Strict(val type: Type)
+val Number.asEntity: Entity
+    get() = Integer(this.toLong())

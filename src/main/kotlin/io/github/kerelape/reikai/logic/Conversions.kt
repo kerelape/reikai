@@ -23,50 +23,27 @@
  */
 package io.github.kerelape.reikai.logic
 
-import io.github.kerelape.reikai.core.Data
-import io.github.kerelape.reikai.core.Empty
-import io.github.kerelape.reikai.math.asEntity
-import kotlinx.coroutines.runBlocking
-import org.junit.jupiter.api.Assertions
-import org.junit.jupiter.api.Test
+import io.github.kerelape.reikai.core.Entity
+import java.math.BigInteger
 
 /**
- * Test cases for Entity extensions.
+ * Entity representation of the [Boolean].
+ */
+val Boolean.asEntity: Entity
+    get() = when (this) {
+        true -> True
+        false -> False
+    }
+
+/**
+ * Convert [Entity] to [Boolean].
  *
  * @since 0.0.0
  */
-internal class ConversionsTest {
-    /**
-     * Test that [toBoolean] converts to true correctly.
-     */
-    @Test
-    fun `convert to true correctly`() = runBlocking {
-        Assertions.assertTrue(4321.asEntity.toBoolean())
-    }
-
-    /**
-     * Test that [toBoolean] converts zero to false.
-     */
-    @Test
-    fun `convert zero to false`() = runBlocking {
-        Assertions.assertFalse(0.asEntity.toBoolean())
-    }
-
-    /**
-     * Test that [toBoolean] converts bytearray of zeros to false.
-     */
-    @Test
-    fun `convert bytearray of zeros to false`() = runBlocking {
-        Assertions.assertFalse(Data(byteArrayOf(0, 0, 0)).toBoolean())
-    }
-
-    /**
-     * Test that [toBoolean] converts [Empty] to false.
-     *
-     * @origin #50
-     */
-    @Test
-    fun `converts Empty to false`() = runBlocking {
-        Assertions.assertFalse(Empty.toBoolean())
+suspend fun Entity.toBoolean(): Boolean {
+    return try {
+        BigInteger(this.dataize()) != BigInteger.ZERO
+    } catch (exception: NumberFormatException) {
+        false
     }
 }
