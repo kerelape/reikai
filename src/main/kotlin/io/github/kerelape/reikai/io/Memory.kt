@@ -2,7 +2,7 @@ package io.github.kerelape.reikai.io
 
 import io.github.kerelape.reikai.core.Entity
 import io.github.kerelape.reikai.extentions.asEntity
-import io.github.kerelape.reikai.logic.Equality
+import io.github.kerelape.reikai.logic.Identity
 import io.github.kerelape.reikai.logic.Fork
 
 /**
@@ -18,7 +18,7 @@ class Memory(
 
     override suspend fun dataize(): ByteArray {
         return Fork(
-            Equality(this.size, (-1).asEntity),
+            Identity(this.size, (-1).asEntity),
             this.origin,
             Entity { this.origin.get(this.position, this.size).dataize() }
         ).dataize()

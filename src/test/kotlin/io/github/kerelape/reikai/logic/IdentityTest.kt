@@ -6,11 +6,11 @@ import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
 /**
- * Test cases for [Equality].
+ * Test cases for [Identity].
  *
  * @since 0.0.0
  */
-class EqualityTest {
+class IdentityTest {
 
     /**
      * Test that it returns true.
@@ -19,7 +19,7 @@ class EqualityTest {
     fun `works for similar objects`() = runBlocking {
         Assertions.assertNotEquals(
             0,
-            Equality(
+            Identity(
                 1.asEntity,
                 1.asEntity
             ).dataize()[0]
@@ -33,7 +33,7 @@ class EqualityTest {
     fun `works for different objects`() = runBlocking {
         Assertions.assertEquals(
             0,
-            Equality(
+            Identity(
                 2412.asEntity,
                 3561.asEntity
             ).dataize()[0]
