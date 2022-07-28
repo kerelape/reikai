@@ -167,6 +167,30 @@ SOFTWARE.
         </configuration>
       </plugin>
       <plugin>
+        <groupId>org.cqfn.diktat</groupId>
+        <artifactId>diktat-maven-plugin</artifactId>
+        <version>1.2.1</version>
+        <executions>
+          <execution>
+            <id>diktat</id>
+            <phase>none</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+            <configuration>
+              <inputs>
+                <input>${project.basedir}/src/main/kotlin</input>
+                <input>${project.basedir}/src/test/kotlin</input>
+              </inputs>
+              <diktatConfigFile>diktat-analysis.yml</diktatConfigFile>
+              <excludes>
+                <exclude>${project.basedir}/src/test/kotlin/excluded</exclude>
+              </excludes>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-antrun-plugin</artifactId>
         <version>1.8</version>
