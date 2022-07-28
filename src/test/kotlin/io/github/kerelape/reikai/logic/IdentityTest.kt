@@ -1,6 +1,7 @@
 package io.github.kerelape.reikai.logic
 
 import io.github.kerelape.reikai.extentions.asEntity
+import io.github.kerelape.reikai.extentions.toBoolean
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
@@ -17,12 +18,8 @@ class IdentityTest {
      */
     @Test
     fun `works for similar objects`() = runBlocking {
-        Assertions.assertNotEquals(
-            0,
-            Identity(
-                1.asEntity,
-                1.asEntity
-            ).dataize()[0]
+        Assertions.assertTrue(
+            Identity(1.asEntity, 1.asEntity).toBoolean()
         )
     }
 
@@ -31,12 +28,8 @@ class IdentityTest {
      */
     @Test
     fun `works for different objects`() = runBlocking {
-        Assertions.assertEquals(
-            0,
-            Identity(
-                2412.asEntity,
-                3561.asEntity
-            ).dataize()[0]
+        Assertions.assertFalse(
+            Identity(0.asEntity, 1.asEntity).toBoolean()
         )
     }
 }
