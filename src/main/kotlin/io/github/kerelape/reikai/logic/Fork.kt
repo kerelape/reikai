@@ -2,7 +2,6 @@ package io.github.kerelape.reikai.logic
 
 import io.github.kerelape.reikai.core.Entity
 import io.github.kerelape.reikai.core.EntityWrap
-import io.github.kerelape.reikai.extentions.toBoolean
 
 /**
  * Fork. Selects value or fallback depending on condition.

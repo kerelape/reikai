@@ -2,7 +2,7 @@ package io.github.kerelape.reikai.io.network
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import io.github.kerelape.reikai.extentions.asEntity
+import io.github.kerelape.reikai.logic.asEntity
 import io.github.kerelape.reikai.io.Channel
 import io.github.kerelape.reikai.io.Source
 import io.github.kerelape.reikai.logic.True

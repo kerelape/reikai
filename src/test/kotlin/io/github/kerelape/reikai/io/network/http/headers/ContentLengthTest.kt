@@ -1,6 +1,6 @@
 package io.github.kerelape.reikai.io.network.http.headers
 
-import io.github.kerelape.reikai.extentions.asEntity
+import io.github.kerelape.reikai.logic.asEntity
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test

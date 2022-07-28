@@ -2,6 +2,7 @@ package io.github.kerelape.reikai.extentions
 
 import io.github.kerelape.reikai.core.Data
 import io.github.kerelape.reikai.core.Empty
+import io.github.kerelape.reikai.logic.toBoolean
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test

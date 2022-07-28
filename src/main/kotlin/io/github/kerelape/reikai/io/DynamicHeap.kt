@@ -2,7 +2,7 @@ package io.github.kerelape.reikai.io
 
 import io.github.kerelape.reikai.core.Data
 import io.github.kerelape.reikai.core.Entity
-import io.github.kerelape.reikai.extentions.asEntity
+import io.github.kerelape.reikai.logic.asEntity
 import java.math.BigInteger
 
 /**
