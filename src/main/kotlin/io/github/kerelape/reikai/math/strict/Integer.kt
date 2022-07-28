@@ -1,6 +1,7 @@
 package io.github.kerelape.reikai.math.strict
 
 import io.github.kerelape.reikai.core.Entity
+import io.github.kerelape.reikai.core.EntityWrap
 import java.nio.ByteBuffer
 
 /**
@@ -8,14 +9,4 @@ import java.nio.ByteBuffer
  *
  * @since 0.0.0
  */
-class Integer(private val origin: Long) : Entity {
-
-    /**
-     * Converts [origin] to [ByteArray]
-     *
-     * @return Binary representation of [origin].
-     */
-    override suspend fun dataize(): ByteArray {
-        return ByteBuffer.allocate(Long.SIZE_BYTES).putLong(this.origin).array()
-    }
-}
+class Integer(origin: Long) : EntityWrap(Entity { ByteBuffer.allocate(Long.SIZE_BYTES).putLong(origin).array() })
