@@ -10,6 +10,6 @@ import java.math.BigInteger
  *
  * @since 0.0.0
  */
-class Equality(vararg entities: Entity) : EntityWrap(Entity {
-    (if (BigInteger(Xor(*entities).dataize()) == BigInteger.ZERO) True else False).dataize()
+class Equality(first: Entity, second: Entity) : EntityWrap(Entity {
+    (if (BigInteger(Xor(first, second).dataize()) == BigInteger.ZERO) True else False).dataize()
 })
