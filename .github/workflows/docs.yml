@@ -21,3 +21,4 @@ jobs:
         with:
           BRANCH: gh-pages
           FOLDER: target/dokka
+          TARGET-FOLDER: docs
