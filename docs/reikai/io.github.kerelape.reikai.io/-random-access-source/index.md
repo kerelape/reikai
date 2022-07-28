@@ -1,0 +1,43 @@
+---
+title: RandomAccessSource
+---
+//[reikai](../../../index.html)/[io.github.kerelape.reikai.io](../index.html)/[RandomAccessSource](index.html)
+
+
+
+# RandomAccessSource
+
+
+
+[JVM]\
+interface [RandomAccessSource](index.html) : [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)
+
+Source of [RandomAccessChannel](../-random-access-channel/index.html)s
+
+
+
+#### Since
+
+
+
+0.0.0
+
+
+
+## Functions
+
+
+| Name | Summary |
+|---|---|
+| [close](close.html) | [JVM]<br>abstract suspend fun [close](close.html)(): [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)<br>Close the source. |
+| [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html) | [JVM]<br>abstract suspend fun [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
+| [open](open.html) | [JVM]<br>abstract suspend fun [open](open.html)(): [RandomAccessChannel](../-random-access-channel/index.html)<br>Open channel. |
+
+
+## Inheritors
+
+
+| Name |
+|---|
+| [File](../../io.github.kerelape.reikai.io.filesystem/-file/index.html) |
+
