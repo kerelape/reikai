@@ -23,6 +23,7 @@
  */
 package io.github.kerelape.reikai.logic
 
+import io.github.kerelape.reikai.core.Empty
 import io.github.kerelape.reikai.math.asEntity
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions
@@ -51,6 +52,26 @@ class IdentityTest {
     fun `works for different objects`() = runBlocking {
         Assertions.assertFalse(
             Identity(0.asEntity, 1.asEntity).toBoolean()
+        )
+    }
+
+    /**
+     * Test that [Empty] compares to non-empty is false.
+     */
+    @Test
+    fun `false for empty and non-empty`() = runBlocking {
+        Assertions.assertFalse(
+            Identity(Empty, 1.asEntity).toBoolean()
+        )
+    }
+
+    /**
+     * Test that [Empty] compares to [Empty] is true.
+     */
+    @Test
+    fun `false for empty and empty`() = runBlocking {
+        Assertions.assertTrue(
+            Identity(Empty, Empty).toBoolean()
         )
     }
 }
