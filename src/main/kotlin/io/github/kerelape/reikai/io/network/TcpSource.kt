@@ -1,11 +1,11 @@
 package io.github.kerelape.reikai.io.network
 
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
-import io.github.kerelape.reikai.logic.asEntity
 import io.github.kerelape.reikai.io.Channel
 import io.github.kerelape.reikai.io.Source
 import io.github.kerelape.reikai.logic.True
+import io.github.kerelape.reikai.logic.asEntity
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import java.nio.channels.AsynchronousServerSocketChannel
 import java.nio.channels.AsynchronousSocketChannel
 import java.nio.channels.CompletionHandler
@@ -32,15 +32,18 @@ class TcpSource(private val channel: AsynchronousServerSocketChannel) : Source {
      */
     override suspend fun open(): Channel {
         return suspendCoroutine { continuation ->
-            this.channel.accept(this, object : CompletionHandler<AsynchronousSocketChannel, Source> {
-                override fun completed(result: AsynchronousSocketChannel, attachment: Source) {
-                    continuation.resume(TcpChannel(result, attachment))
-                }
+            this.channel.accept(
+                this,
+                object : CompletionHandler<AsynchronousSocketChannel, Source> {
+                    override fun completed(result: AsynchronousSocketChannel, attachment: Source) {
+                        continuation.resume(TcpChannel(result, attachment))
+                    }
 
-                override fun failed(exc: Throwable, attachment: Source) {
-                    continuation.resumeWithException(exc)
+                    override fun failed(exc: Throwable, attachment: Source) {
+                        continuation.resumeWithException(exc)
+                    }
                 }
-            })
+            )
         }
     }
 

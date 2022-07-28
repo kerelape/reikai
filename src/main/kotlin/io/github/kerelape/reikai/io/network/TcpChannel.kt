@@ -1,10 +1,10 @@
 package io.github.kerelape.reikai.io.network
 
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 import io.github.kerelape.reikai.core.Entity
 import io.github.kerelape.reikai.io.Channel
 import io.github.kerelape.reikai.io.Source
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import java.nio.ByteBuffer
 import java.nio.channels.AsynchronousSocketChannel
 import java.nio.channels.CompletionHandler
@@ -27,15 +27,19 @@ class TcpChannel(private val socket: AsynchronousSocketChannel, private val pare
     override suspend fun dataize(): ByteArray {
         return suspendCoroutine { continuation ->
             with(ByteBuffer.allocate(1024)) {
-                this@TcpChannel.socket.read(this, this, object : CompletionHandler<Int, ByteBuffer> {
-                    override fun completed(result: Int, attachment: ByteBuffer) {
-                        continuation.resume(attachment.array())
-                    }
+                this@TcpChannel.socket.read(
+                    this,
+                    this,
+                    object : CompletionHandler<Int, ByteBuffer> {
+                        override fun completed(result: Int, attachment: ByteBuffer) {
+                            continuation.resume(attachment.array())
+                        }
 
-                    override fun failed(exc: Throwable, attachment: ByteBuffer) {
-                        continuation.resumeWithException(exc)
+                        override fun failed(exc: Throwable, attachment: ByteBuffer) {
+                            continuation.resumeWithException(exc)
+                        }
                     }
-                })
+                )
             }
         }
     }
@@ -48,15 +52,19 @@ class TcpChannel(private val socket: AsynchronousSocketChannel, private val pare
     override suspend fun put(data: Entity): Entity {
         val bytes = data.dataize()
         return suspendCoroutine { continuation ->
-            this.socket.write(ByteBuffer.wrap(bytes), null, object : CompletionHandler<Int, Unit?> {
-                override fun completed(result: Int, attachment: Unit?) {
-                    continuation.resume(data)
-                }
+            this.socket.write(
+                ByteBuffer.wrap(bytes),
+                null,
+                object : CompletionHandler<Int, Unit?> {
+                    override fun completed(result: Int, attachment: Unit?) {
+                        continuation.resume(data)
+                    }
 
-                override fun failed(exc: Throwable, attachment: Unit?) {
-                    continuation.resumeWithException(exc)
+                    override fun failed(exc: Throwable, attachment: Unit?) {
+                        continuation.resumeWithException(exc)
+                    }
                 }
-            })
+            )
         }
     }
 

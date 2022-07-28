@@ -9,6 +9,8 @@ import java.math.BigInteger
  *
  * @since 0.0.0
  */
-class Not(origin: Entity) : EntityWrap(Entity {
-    BigInteger(origin.dataize()).not().toByteArray()
-})
+class Not(origin: Entity) : EntityWrap(
+    Entity {
+        BigInteger(origin.dataize()).not().toByteArray()
+    }
+)

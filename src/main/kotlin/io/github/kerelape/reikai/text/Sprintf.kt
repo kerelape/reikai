@@ -10,8 +10,10 @@ import io.github.kerelape.reikai.core.EntityWrap
  *
  * @since 0.0.0
  */
-class Sprintf(template: Entity, vararg args: Entity) : EntityWrap(Entity {
-    val template = String(template.dataize())
-    val args = args.map { String(it.dataize()) }
-    Text(template.format(*args.toTypedArray())).dataize()
-})
+class Sprintf(template: Entity, vararg args: Entity) : EntityWrap(
+    Entity {
+        val template = String(template.dataize())
+        val args = args.map { String(it.dataize()) }
+        Text(template.format(*args.toTypedArray())).dataize()
+    }
+)

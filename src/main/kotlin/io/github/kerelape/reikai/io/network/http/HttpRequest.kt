@@ -9,11 +9,13 @@ import io.github.kerelape.reikai.io.Source
  *
  * @since 0.0.0
  */
-class HttpRequest(transport: Source, request: Entity) : EntityWrap(Entity {
-    val channel = HttpChannel(transport.open(), transport)
-    try {
-        channel.put(request).dataize()
-    } finally {
-        channel.close()
+class HttpRequest(transport: Source, request: Entity) : EntityWrap(
+    Entity {
+        val channel = HttpChannel(transport.open(), transport)
+        try {
+            channel.put(request).dataize()
+        } finally {
+            channel.close()
+        }
     }
-})
+)

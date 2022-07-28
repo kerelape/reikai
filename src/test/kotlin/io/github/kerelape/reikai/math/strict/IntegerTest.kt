@@ -1,9 +1,9 @@
 package io.github.kerelape.reikai.math.strict
 
-import java.math.BigInteger
+import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
-import kotlinx.coroutines.runBlocking
+import java.math.BigInteger
 
 /**
  * Test cases for [Integer].

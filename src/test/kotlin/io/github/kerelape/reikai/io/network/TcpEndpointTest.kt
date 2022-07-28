@@ -1,10 +1,10 @@
 package io.github.kerelape.reikai.io.network
 
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
 import io.github.kerelape.reikai.core.Data
 import io.github.kerelape.reikai.math.asEntity
 import io.github.kerelape.reikai.text.asEntity
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 

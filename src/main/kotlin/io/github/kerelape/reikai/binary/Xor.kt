@@ -9,12 +9,14 @@ import java.math.BigInteger
  *
  * @since 0.0.0
  */
-class Xor(vararg elements: Entity) : EntityWrap(Entity {
-    if (elements.size < 2) {
-        throw IllegalStateException("elements must contain at least 2 entities")
+class Xor(vararg elements: Entity) : EntityWrap(
+    Entity {
+        if (elements.size < 2) {
+            throw IllegalStateException("elements must contain at least 2 entities")
+        }
+        elements
+            .map { BigInteger(it.dataize()) }
+            .reduce { a, b -> a.xor(b) }
+            .toByteArray()
     }
-    elements
-        .map { BigInteger(it.dataize()) }
-        .reduce { a, b -> a.xor(b) }
-        .toByteArray()
-})
+)

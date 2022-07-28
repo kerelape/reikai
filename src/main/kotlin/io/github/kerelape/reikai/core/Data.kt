@@ -11,7 +11,9 @@ class Data(bytes: Entity) : EntityWrap(bytes) {
 
     constructor(bytes: ByteArray) : this(Entity { bytes })
 
-    constructor(buffer: ByteBuffer) : this(Entity {
-        ByteArray(buffer.limit()) { buffer.get(it) }
-    })
+    constructor(buffer: ByteBuffer) : this(
+        Entity {
+            ByteArray(buffer.limit()) { buffer.get(it) }
+        }
+    )
 }

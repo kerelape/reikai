@@ -1,7 +1,5 @@
 package io.github.kerelape.reikai.io.network
 
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 import io.github.kerelape.reikai.core.Entity
 import io.github.kerelape.reikai.io.Channel
 import io.github.kerelape.reikai.io.Source
@@ -9,6 +7,8 @@ import io.github.kerelape.reikai.logic.False
 import io.github.kerelape.reikai.text.IntegerAsText
 import io.github.kerelape.reikai.text.Sprintf
 import io.github.kerelape.reikai.text.Text
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import java.math.BigInteger
 import java.net.InetSocketAddress
 import java.nio.channels.AsynchronousServerSocketChannel
@@ -46,15 +46,19 @@ class TcpEndpoint(private val address: Entity, private val port: Entity) : Endpo
             AsynchronousSocketChannel.open()
         }
         return suspendCoroutine { continuation ->
-            channel.connect(address, this, object : CompletionHandler<Void, Source> {
-                override fun completed(result: Void?, attachment: Source) {
-                    continuation.resume(TcpChannel(channel, attachment))
-                }
+            channel.connect(
+                address,
+                this,
+                object : CompletionHandler<Void, Source> {
+                    override fun completed(result: Void?, attachment: Source) {
+                        continuation.resume(TcpChannel(channel, attachment))
+                    }
 
-                override fun failed(exc: Throwable, attachment: Source) {
-                    continuation.resumeWithException(exc)
+                    override fun failed(exc: Throwable, attachment: Source) {
+                        continuation.resumeWithException(exc)
+                    }
                 }
-            })
+            )
         }
     }
 

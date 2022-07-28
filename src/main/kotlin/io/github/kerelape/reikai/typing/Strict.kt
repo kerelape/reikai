@@ -8,6 +8,6 @@ package io.github.kerelape.reikai.typing
  */
 @Target(
     AnnotationTarget.CLASS,
-    AnnotationTarget.VALUE_PARAMETER,
+    AnnotationTarget.VALUE_PARAMETER
 )
 annotation class Strict(val type: Type)

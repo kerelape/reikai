@@ -9,6 +9,8 @@ import java.math.BigInteger
  *
  * @since 0.0.0
  */
-class Sum(base: Entity, addend: Entity) : EntityWrap(Entity {
-    BigInteger(base.dataize()).add(BigInteger(addend.dataize())).toByteArray()
-})
+class Sum(base: Entity, addend: Entity) : EntityWrap(
+    Entity {
+        BigInteger(base.dataize()).add(BigInteger(addend.dataize())).toByteArray()
+    }
+)

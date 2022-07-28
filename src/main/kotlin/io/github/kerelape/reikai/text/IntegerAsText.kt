@@ -9,8 +9,10 @@ import java.math.BigInteger
  *
  * @since 0.0.0
  */
-class IntegerAsText(source: Entity) : EntityWrap(Entity {
-    Text(
-        BigInteger(source.dataize()).toString()
-    ).dataize()
-})
+class IntegerAsText(source: Entity) : EntityWrap(
+    Entity {
+        Text(
+            BigInteger(source.dataize()).toString()
+        ).dataize()
+    }
+)
