@@ -41,7 +41,6 @@ import kotlin.coroutines.suspendCoroutine
  * @since 0.0.0
  */
 class TcpChannel(private val socket: AsynchronousSocketChannel, private val parent: Source) : Channel {
-
     /**
      * Read next chunk of data from the socket.
      *

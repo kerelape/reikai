@@ -29,7 +29,6 @@ package io.github.kerelape.reikai.typing
  * @since 0.1.0
  */
 enum class Type {
-
     /**
      * Strict number.
      *

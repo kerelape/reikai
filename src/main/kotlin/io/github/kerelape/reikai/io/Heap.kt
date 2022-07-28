@@ -34,7 +34,6 @@ import java.nio.ByteBuffer
  * @since 0.0.0
  */
 class Heap(private val buffer: ByteBuffer) : RandomAccessDestination {
-
     override suspend fun dataize(): ByteArray {
         return this.buffer.array()
     }

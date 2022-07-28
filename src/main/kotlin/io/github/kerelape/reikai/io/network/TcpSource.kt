@@ -42,7 +42,6 @@ import kotlin.coroutines.suspendCoroutine
  * @since 0.0.0
  */
 class TcpSource(private val channel: AsynchronousServerSocketChannel) : Source {
-
     /**
      * @return 1 or 0 depending on its state (1 for open, and 0 for closed)
      */

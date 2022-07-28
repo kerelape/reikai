@@ -34,7 +34,6 @@ import java.math.BigInteger
  * @since 0.0.0
  */
 class IntegerTest {
-
     /**
      * Test that [Integer] can wrap a [Long].
      */

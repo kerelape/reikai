@@ -31,7 +31,6 @@ import io.github.kerelape.reikai.core.Entity
  * @since 0.0.0
  */
 interface Destination : Entity {
-
     /**
      * Put arbitrary [data] to the destination.
      *

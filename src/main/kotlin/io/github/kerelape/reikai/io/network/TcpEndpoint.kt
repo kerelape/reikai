@@ -47,7 +47,6 @@ import kotlin.coroutines.suspendCoroutine
  * @since 0.0.0
  */
 class TcpEndpoint(private val address: Entity, private val port: Entity) : Endpoint {
-
     /**
      * @return Its destination in format "address:port"
      */

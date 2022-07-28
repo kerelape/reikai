@@ -39,7 +39,6 @@ import java.nio.file.StandardOpenOption
  * @since 0.0.0
  */
 class FileTest {
-
     /**
      * Test that the file can write and then read.
      */

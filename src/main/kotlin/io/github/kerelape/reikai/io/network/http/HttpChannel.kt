@@ -36,7 +36,6 @@ import io.github.kerelape.reikai.math.asEntity
  * @since 0.0.0
  */
 class HttpChannel(private val transport: Channel, private val parent: Source) : Channel {
-
     /**
      * @return Content from the endpoint.
      */

@@ -29,7 +29,6 @@ package io.github.kerelape.reikai.core
  * @since 0.0.0
  */
 fun interface Entity {
-
     /**
      * Representation of the object in bytes.
      *

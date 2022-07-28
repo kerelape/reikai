@@ -39,7 +39,6 @@ import java.nio.file.Path
  * @since 0.0.0
  */
 class File(private val path: Entity, private vararg val options: OpenOption) : RandomAccessSource {
-
     /**
      * @return Path to the file.
      */

@@ -31,7 +31,6 @@ import io.github.kerelape.reikai.io.Source
  * @since 0.0.0
  */
 interface Endpoint : Source {
-
     /**
      * Listen for incoming connections.
      *

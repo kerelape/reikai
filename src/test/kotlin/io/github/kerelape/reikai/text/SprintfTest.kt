@@ -33,7 +33,6 @@ import org.junit.jupiter.api.Test
  * @since 0.0.0
  */
 class SprintfTest {
-
     /**
      * Test that [Sprintf] converts to correct [String].
      */

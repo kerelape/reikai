@@ -34,7 +34,6 @@ import io.github.kerelape.reikai.io.Source
  * @since 0.0.0
  */
 class HttpSource(private val transport: Source) : EntityWrap(transport), Source {
-
     /**
      * Open a new HttpChannel.
      */

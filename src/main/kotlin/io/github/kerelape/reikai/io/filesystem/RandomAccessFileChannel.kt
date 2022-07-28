@@ -47,7 +47,6 @@ class RandomAccessFileChannel(
     private val channel: AsynchronousFileChannel,
     private val parent: RandomAccessSource
 ) : RandomAccessChannel {
-
     /**
      * @return All content of the file.
      */

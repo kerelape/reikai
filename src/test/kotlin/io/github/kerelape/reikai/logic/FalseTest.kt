@@ -33,7 +33,6 @@ import org.junit.jupiter.api.Test
  * @since 0.0.0
  */
 class FalseTest {
-
     /**
      * Test that [False] equals to false.
      */

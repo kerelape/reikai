@@ -33,7 +33,6 @@ import org.junit.jupiter.api.Test
  * @since 0.0.0
  */
 class TextTest {
-
     /**
      * Test that [String] can wrap a [Text].
      */

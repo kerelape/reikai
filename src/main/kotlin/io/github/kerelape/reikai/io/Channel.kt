@@ -29,7 +29,6 @@ package io.github.kerelape.reikai.io
  * @since 0.0.0
  */
 interface Channel : Destination {
-
     /**
      * Close the channel.
      *

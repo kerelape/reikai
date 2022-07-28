@@ -23,6 +23,8 @@
  */
 package io.github.kerelape.reikai.io.network.http.request
 
+import io.github.kerelape.reikai.core.Entity
+import io.github.kerelape.reikai.core.EntityWrap
 import io.github.kerelape.reikai.text.Text
 
 /**
@@ -30,9 +32,6 @@ import io.github.kerelape.reikai.text.Text
  *
  * @since 0.0.0
  */
-class HttpGetPacketHeader(
-    path: io.github.kerelape.reikai.core.Entity,
-    vararg headers: io.github.kerelape.reikai.core.Entity
-) : io.github.kerelape.reikai.core.EntityWrap(
+class HttpGetPacketHeader(path: Entity, vararg headers: Entity) : EntityWrap(
     HttpRequestPacketHeader(Text("GET"), path, *headers)
 )

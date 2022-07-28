@@ -35,7 +35,6 @@ import org.junit.jupiter.api.Test
  * @since 0.0.0
  */
 class ForkTest {
-
     /**
      * Test that it works for true.
      */

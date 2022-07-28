@@ -36,7 +36,6 @@ import org.junit.jupiter.api.Test
  * @since 0.0.0
  */
 internal class ConversionsTest {
-
     /**
      * Test that [toBoolean] converts to true correctly.
      */

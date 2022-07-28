@@ -36,7 +36,6 @@ import java.nio.ByteBuffer
  * @since 0.0.0
  */
 class HeapTest {
-
     /**
      * Test that it puts data correctly.
      */

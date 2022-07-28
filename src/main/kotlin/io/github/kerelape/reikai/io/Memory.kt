@@ -38,7 +38,6 @@ class Memory(
     private val position: Entity = 0.asEntity,
     private val size: Entity = (-1).asEntity
 ) : Destination {
-
     override suspend fun dataize(): ByteArray {
         return Fork(
             Identity(this.size, (-1).asEntity),

@@ -34,7 +34,6 @@ import org.junit.jupiter.api.Test
  * @since 0.0.0
  */
 internal class HttpPacketHeaderTest {
-
     /**
      * Test that it formats correctly.
      */
