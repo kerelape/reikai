@@ -148,28 +148,6 @@ SOFTWARE.
           </execution>
         </executions>
       </plugin>
-      <plugin>
-        <groupId>org.jetbrains.dokka</groupId>
-        <artifactId>dokka-maven-plugin</artifactId>
-        <version>1.7.10</version>
-        <executions>
-          <execution>
-            <phase>pre-site</phase>
-            <goals>
-              <goal>dokka</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <dokkaPlugins>
-            <plugin>
-              <groupId>org.jetbrains.dokka</groupId>
-              <artifactId>jekyll-plugin</artifactId>
-              <version>1.7.10</version>
-            </plugin>
-          </dokkaPlugins>
-        </configuration>
-      </plugin>
     </plugins>
   </build>
   <profiles>
@@ -243,6 +221,35 @@ SOFTWARE.
                 <version>0.46.1</version>
               </dependency>
             </dependencies>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>docs</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.jetbrains.dokka</groupId>
+            <artifactId>dokka-maven-plugin</artifactId>
+            <version>1.7.10</version>
+            <executions>
+              <execution>
+                <phase>pre-site</phase>
+                <goals>
+                  <goal>dokka</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <dokkaPlugins>
+                <plugin>
+                  <groupId>org.jetbrains.dokka</groupId>
+                  <artifactId>jekyll-plugin</artifactId>
+                  <version>1.7.10</version>
+                </plugin>
+              </dokkaPlugins>
+            </configuration>
           </plugin>
         </plugins>
       </build>
