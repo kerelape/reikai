@@ -15,10 +15,12 @@ jobs:
         with:
           java-version: 11
       - name: Build documentation
-        run: mvn clean pre-site
+        run: mvn pre-site -Pdocs
+      - name: Set theme
+        run: | 
+          echo "theme: jekyll-theme-merlot" > target/dokka/_config.yml
       - name: Publish documentation
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          BRANCH: gh-pages
-          FOLDER: target/dokka
-          TARGET-FOLDER: docs
+          branch: gh-pages
+          folder: target/dokka
