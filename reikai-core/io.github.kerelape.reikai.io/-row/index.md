@@ -10,7 +10,7 @@ title: Row
 
 
 [JVM]\
-class [Row](index.html) : [Destination](../-destination/index.html)
+class [Row](index.html)(origin: [RandomAccessDestination](../-random-access-destination/index.html)) : [Destination](../-destination/index.html)
 
 Sequence of data.
 
@@ -33,7 +33,7 @@ Sequence of data.
 
 | | |
 |---|---|
-| [Row](-row.html) | [JVM]<br>fun [Row](-row.html)() |
+| [Row](-row.html) | [JVM]<br>fun [Row](-row.html)(origin: [RandomAccessDestination](../-random-access-destination/index.html)) |
 
 
 ## Functions

@@ -23,6 +23,6 @@ title: io.github.kerelape.reikai.io
 | [RandomAccessChannel](-random-access-channel/index.html) | [JVM]<br>interface [RandomAccessChannel](-random-access-channel/index.html) : [RandomAccessDestination](-random-access-destination/index.html)<br>Random access channel. |
 | [RandomAccessDestination](-random-access-destination/index.html) | [JVM]<br>interface [RandomAccessDestination](-random-access-destination/index.html) : [Entity](../io.github.kerelape.reikai.core/-entity/index.html)<br>Destination with random access. |
 | [RandomAccessSource](-random-access-source/index.html) | [JVM]<br>interface [RandomAccessSource](-random-access-source/index.html) : [Entity](../io.github.kerelape.reikai.core/-entity/index.html)<br>Source of [RandomAccessChannel](-random-access-channel/index.html)s |
-| [Row](-row/index.html) | [JVM]<br>class [Row](-row/index.html) : [Destination](-destination/index.html)<br>Sequence of data. |
+| [Row](-row/index.html) | [JVM]<br>class [Row](-row/index.html)(origin: [RandomAccessDestination](-random-access-destination/index.html)) : [Destination](-destination/index.html)<br>Sequence of data. |
 | [Source](-source/index.html) | [JVM]<br>interface [Source](-source/index.html) : [Entity](../io.github.kerelape.reikai.core/-entity/index.html)<br>Source of data. |
 

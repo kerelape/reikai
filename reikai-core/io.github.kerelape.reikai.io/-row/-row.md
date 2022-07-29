@@ -10,7 +10,7 @@ title: Row
 
 
 [JVM]\
-fun [Row](-row.html)()
+fun [Row](-row.html)(origin: [RandomAccessDestination](../-random-access-destination/index.html))
 
 
 
