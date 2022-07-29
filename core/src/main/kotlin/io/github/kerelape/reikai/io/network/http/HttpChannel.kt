@@ -26,6 +26,7 @@ package io.github.kerelape.reikai.io.network.http
 import io.github.kerelape.reikai.core.Data
 import io.github.kerelape.reikai.core.Entity
 import io.github.kerelape.reikai.io.Channel
+import io.github.kerelape.reikai.io.DynamicHeap
 import io.github.kerelape.reikai.io.Row
 import io.github.kerelape.reikai.io.Source
 import io.github.kerelape.reikai.math.asEntity
@@ -40,7 +41,7 @@ class HttpChannel(private val transport: Channel, private val parent: Source) : 
      * @return Content from the endpoint.
      */
     override suspend fun dataize(): ByteArray {
-        val request = Row()
+        val request = Row(DynamicHeap())
         while (true) {
             val chunk = this.transport.dataize()
             if (chunk.last() == 0.toByte()) {

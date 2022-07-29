@@ -47,8 +47,14 @@ class DynamicHeap(private val limit: Entity = (-1).asEntity) : RandomAccessDesti
         if (pos + dat.size > limit && limit != -1) {
             throw IllegalArgumentException("Out of limit")
         }
-        this.heap.addAll(pos, dat.toList())
-        return Data(dat)
+        return try {
+            this.heap.addAll(pos, dat.toList())
+            Data(dat)
+        } catch (exception: IndexOutOfBoundsException) {
+            val zeros = ByteArray(pos - this.heap.size) { 0 }
+            this.heap.addAll(this.heap.size, zeros.toList())
+            this.put(position, Data(dat))
+        }
     }
 
     override suspend fun get(position: Entity, size: Entity): Entity {

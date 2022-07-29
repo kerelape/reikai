@@ -39,7 +39,7 @@ internal class RowTest {
      */
     @Test
     fun appends() = runBlocking {
-        val row = Row()
+        val row = Row(DynamicHeap())
         row.put(Text("a"))
         row.put(Text("b"))
         row.put(Text("c"))
