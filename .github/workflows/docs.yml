@@ -18,7 +18,7 @@ jobs:
         run: mvn pre-site -Pdocs
       - name: Set theme
         run: | 
-          echo "theme: jekyll-theme-merlot" > core/target/dokka/_config.yml
+          echo "remote_theme: just-the-docs/just-the-docs" > core/target/dokka/_config.yml
       - name: Publish documentation
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
