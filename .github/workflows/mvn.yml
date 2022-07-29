@@ -1,4 +1,4 @@
-name: mvn
+name: Build
 on:
   push:
     branches:
