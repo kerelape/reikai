@@ -28,7 +28,7 @@ jobs:
       - name: Show versions
         run: java -version; mvn -version;
       - name: Build it with Maven
-        run: mvn -B test verify
+        run: mvn clean install -Plint -B
   xcop-lint:
     runs-on: ubuntu-latest
     steps:
