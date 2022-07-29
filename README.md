@@ -5,7 +5,7 @@ The idea is that there is no data types — the only data *type* is `ByteArray`,
 
 <p align="center">
   <a href="https://codecov.io/gh/kerelape/reikai"> 
-    <img height="32px" src="https://codecov.io/gh/kerelape/reikai/branch/main/graph/badge.svg?token=3aMJnpv6fu"/> 
+    <img height="32px" src="https://codecov.io/gh/kerelape/reikai/branch/master/graph/badge.svg?token=3aMJnpv6fu"/> 
   </a>
 </p>
 
