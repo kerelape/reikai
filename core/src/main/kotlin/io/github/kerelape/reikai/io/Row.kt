@@ -24,6 +24,7 @@
 package io.github.kerelape.reikai.io
 
 import io.github.kerelape.reikai.core.Entity
+import io.github.kerelape.reikai.core.Length
 
 /**
  * Sequence of data.
@@ -32,11 +33,9 @@ import io.github.kerelape.reikai.core.Entity
  *  The destination must be passed through the constructor.
  * @since 0.0.0
  */
-class Row : Destination {
-    private val accumulator = arrayListOf<Byte>()
-
+class Row(private val origin: RandomAccessDestination) : Destination {
     override suspend fun dataize(): ByteArray {
-        return this.accumulator.toByteArray()
+        return this.origin.dataize()
     }
 
     /**
@@ -45,7 +44,7 @@ class Row : Destination {
      * @return This object with [data] appended.
      */
     override suspend fun put(data: Entity): Entity {
-        this.accumulator.addAll(data.dataize().toList())
+        this.origin.put(Length(this.origin), data)
         return this
     }
 }
