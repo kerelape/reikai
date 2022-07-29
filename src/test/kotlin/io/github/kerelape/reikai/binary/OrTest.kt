@@ -34,7 +34,7 @@ import java.math.BigInteger
  *
  * @since 0.0.0
  */
-class OrTest {
+internal class OrTest {
     /**
      * Test that it works correctly.
      */
