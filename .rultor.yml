@@ -1,3 +1,5 @@
+architect:
+  - kerelape
 assets:
   settings.xml: kerelape/reikai-secrets#settings.xml
 install: |
