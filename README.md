@@ -5,10 +5,10 @@ The idea is that there is no data types — the only data *type* is `ByteArray`,
 
 <p align="center">
   <a href="https://codecov.io/gh/kerelape/reikai"> 
-    <img height="32px" src="https://codecov.io/gh/kerelape/reikai/branch/master/graph/badge.svg?token=3aMJnpv6fu"/> 
+    <img height="24px" src="https://codecov.io/gh/kerelape/reikai/branch/master/graph/badge.svg?token=3aMJnpv6fu"/> 
   </a>
   <a href="https://github.com/kerelape/reikai/actions/workflows/mvn.yml">
-    <img height="32px" src="https://github.com/kerelape/reikai/actions/workflows/mvn.yml/badge.svg" />
+    <img height="24px" src="https://github.com/kerelape/reikai/actions/workflows/mvn.yml/badge.svg" />
   </a>
 </p>
 
