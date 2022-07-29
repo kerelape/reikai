@@ -42,7 +42,7 @@ class OrTest {
     fun works() = runBlocking {
         Assertions.assertEquals(
             BigInteger(
-                Xor(0b1000.asEntity, 0b0010.asEntity, 0b0001.asEntity).dataize()
+                Or(0b1000.asEntity, 0b0010.asEntity, 0b0001.asEntity).dataize()
             ).toInt(),
             0b1011
         )
