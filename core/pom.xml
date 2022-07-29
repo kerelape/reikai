@@ -27,7 +27,7 @@ SOFTWARE.
   <parent>
     <groupId>io.github.kerelape</groupId>
     <artifactId>reikai-parent</artifactId>
-    <version>0.0.0</version>
+    <version>0.1.0</version>
   </parent>
   <artifactId>reikai-core</artifactId>
   <packaging>jar</packaging>
