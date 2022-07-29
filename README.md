@@ -1,7 +1,7 @@
 # Reikai
 Reikai (originated from japanese - 霊界, meaning *spiritual world*) is a library for the [Kotlin](https://kotlinlang.org/) programming language. This library is inspired by [φ-calculus](https://arxiv.org/abs/2111.13384), and it's main purpose is to bring [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming) to the language.
 
-The idea is that there is no data types — the only data *type* is `ByteArray`, an arbitrary length amount of bytes. And the objects manipulate the bytes. 
+The idea is that there is no data types — the only data *type* is `ByteArray`, an arbitrary length amount of bytes. And the objects manipulate the bytes.
 
 <p align="center">
   <a href="https://codecov.io/gh/kerelape/reikai"> 
@@ -11,6 +11,9 @@ The idea is that there is no data types — the only data *type* is `ByteArray`,
     <img height="24px" src="https://github.com/kerelape/reikai/actions/workflows/mvn.yml/badge.svg" />
   </a>
 </p>
+
+## Documentation
+Full documentation of this library is available at [GitHub Pages](https://kerelape.github.io/reikai)
 
 <!--
 @todo #26 Add usages examples to the README. Show how to use this library in general cases.
