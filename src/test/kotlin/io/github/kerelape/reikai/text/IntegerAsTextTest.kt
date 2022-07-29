@@ -33,7 +33,7 @@ import org.junit.jupiter.api.Test
  *
  * @since 0.0.0
  */
-class IntegerAsTextTest {
+internal class IntegerAsTextTest {
     /**
      * Test that [IntegerAsText] equals to [Text].
      */

@@ -33,7 +33,7 @@ import org.junit.jupiter.api.Test
  *
  * @since 0.0.0
  */
-class GroupTest {
+internal class GroupTest {
     /**
      * Test that it concatenates.
      */

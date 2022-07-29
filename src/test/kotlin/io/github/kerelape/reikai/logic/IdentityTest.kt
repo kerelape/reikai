@@ -34,7 +34,7 @@ import org.junit.jupiter.api.Test
  *
  * @since 0.0.0
  */
-class IdentityTest {
+internal class IdentityTest {
     /**
      * Test that it returns true.
      */
