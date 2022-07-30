@@ -8,4 +8,4 @@ import io.github.kerelape.reikai.core.EntityWrap
  *
  * @since 0.1.0
  */
-class Some(vararg entities: Entity): EntityWrap(Entity { entities.any { it.toBoolean() }.asEntity.dataize() })
+class Some(vararg entities: Entity) : EntityWrap(Entity { entities.any { it.toBoolean() }.asEntity.dataize() })
