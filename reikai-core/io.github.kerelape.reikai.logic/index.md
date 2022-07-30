@@ -14,9 +14,11 @@ title: io.github.kerelape.reikai.logic
 
 | Name | Summary |
 |---|---|
+| [Every](-every/index.html) | [JVM]<br>class [Every](-every/index.html)(entities: [Entity](../io.github.kerelape.reikai.core/-entity/index.html)) : [EntityWrap](../io.github.kerelape.reikai.core/-entity-wrap/index.html)<br>Every. [True](-true/index.html) if all elements is [True](-true/index.html). |
 | [False](-false/index.html) | [JVM]<br>object [False](-false/index.html) : [EntityWrap](../io.github.kerelape.reikai.core/-entity-wrap/index.html)<br>False object that always dataizes as 0. |
 | [Fork](-fork/index.html) | [JVM]<br>class [Fork](-fork/index.html)(condition: [Entity](../io.github.kerelape.reikai.core/-entity/index.html), value: [Entity](../io.github.kerelape.reikai.core/-entity/index.html), fallback: [Entity](../io.github.kerelape.reikai.core/-entity/index.html)) : [EntityWrap](../io.github.kerelape.reikai.core/-entity-wrap/index.html)<br>Fork. Selects value or fallback depending on condition. |
 | [Identity](-identity/index.html) | [JVM]<br>class [Identity](-identity/index.html)(first: [Entity](../io.github.kerelape.reikai.core/-entity/index.html), second: [Entity](../io.github.kerelape.reikai.core/-entity/index.html)) : [EntityWrap](../io.github.kerelape.reikai.core/-entity-wrap/index.html)<br>Equality of entities. |
+| [Some](-some/index.html) | [JVM]<br>class [Some](-some/index.html)(entities: [Entity](../io.github.kerelape.reikai.core/-entity/index.html)) : [EntityWrap](../io.github.kerelape.reikai.core/-entity-wrap/index.html)<br>Some. [True](-true/index.html) if any of the elements is [True](-true/index.html). |
 | [True](-true/index.html) | [JVM]<br>object [True](-true/index.html) : [EntityWrap](../io.github.kerelape.reikai.core/-entity-wrap/index.html)<br>Truth object that always dataizes as 1. |
 
 

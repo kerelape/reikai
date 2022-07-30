@@ -63,9 +63,11 @@ Wrap envelope for [Entity](../-entity/index.html).
 | [HttpHeader](../../io.github.kerelape.reikai.io.network.http.headers/-http-header/index.html) |
 | [HttpGetPacketHeader](../../io.github.kerelape.reikai.io.network.http.request/-http-get-packet-header/index.html) |
 | [HttpRequestPacketHeader](../../io.github.kerelape.reikai.io.network.http.request/-http-request-packet-header/index.html) |
+| [Every](../../io.github.kerelape.reikai.logic/-every/index.html) |
 | [False](../../io.github.kerelape.reikai.logic/-false/index.html) |
 | [Fork](../../io.github.kerelape.reikai.logic/-fork/index.html) |
 | [Identity](../../io.github.kerelape.reikai.logic/-identity/index.html) |
+| [Some](../../io.github.kerelape.reikai.logic/-some/index.html) |
 | [True](../../io.github.kerelape.reikai.logic/-true/index.html) |
 | [Integer](../../io.github.kerelape.reikai.math.strict/-integer/index.html) |
 | [Sum](../../io.github.kerelape.reikai.math.strict/-sum/index.html) |

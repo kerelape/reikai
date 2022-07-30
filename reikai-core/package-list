@@ -121,11 +121,15 @@ $dokka.location:io.github.kerelape.reikai.io/Source/open/#/PointingToDeclaration
 $dokka.location:io.github.kerelape.reikai.logic////PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/index.html
 $dokka.location:io.github.kerelape.reikai.logic//asEntity/kotlin.Boolean#/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/as-entity.html
 $dokka.location:io.github.kerelape.reikai.logic//toBoolean/io.github.kerelape.reikai.core.Entity#/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/to-boolean.html
+$dokka.location:io.github.kerelape.reikai.logic/Every///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/-every/index.html
+$dokka.location:io.github.kerelape.reikai.logic/Every/Every/#kotlin.Array[io.github.kerelape.reikai.core.Entity]/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/-every/-every.html
 $dokka.location:io.github.kerelape.reikai.logic/False///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/-false/index.html
 $dokka.location:io.github.kerelape.reikai.logic/Fork///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/-fork/index.html
 $dokka.location:io.github.kerelape.reikai.logic/Fork/Fork/#io.github.kerelape.reikai.core.Entity#io.github.kerelape.reikai.core.Entity#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/-fork/-fork.html
 $dokka.location:io.github.kerelape.reikai.logic/Identity///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/-identity/index.html
 $dokka.location:io.github.kerelape.reikai.logic/Identity/Identity/#io.github.kerelape.reikai.core.Entity#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/-identity/-identity.html
+$dokka.location:io.github.kerelape.reikai.logic/Some///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/-some/index.html
+$dokka.location:io.github.kerelape.reikai.logic/Some/Some/#kotlin.Array[io.github.kerelape.reikai.core.Entity]/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/-some/-some.html
 $dokka.location:io.github.kerelape.reikai.logic/True///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/-true/index.html
 $dokka.location:io.github.kerelape.reikai.math.strict////PointingToDeclaration/reikai-core/io.github.kerelape.reikai.math.strict/index.html
 $dokka.location:io.github.kerelape.reikai.math.strict/Integer///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.math.strict/-integer/index.html
