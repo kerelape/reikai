@@ -39,4 +39,16 @@ internal class EveryTest {
             Every(False, False, False).toBoolean()
         )
     }
+
+    /**
+     * Test that it is can not be empty.
+     */
+    @Test
+    fun `can not be empty`() {
+        Assertions.assertThrows(IllegalStateException::class.java) {
+            runBlocking {
+                Every().dataize()
+            }
+        }
+    }
 }
