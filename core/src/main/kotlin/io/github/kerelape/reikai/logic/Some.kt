@@ -8,9 +8,11 @@ import io.github.kerelape.reikai.core.EntityWrap
  *
  * @since 0.1.0
  */
-class Some(vararg entities: Entity) : EntityWrap(Entity {
-    if (entities.isEmpty()) {
-        throw IllegalStateException("elements can't be empty")
+class Some(vararg entities: Entity) : EntityWrap(
+    Entity {
+        if (entities.isEmpty()) {
+            throw IllegalStateException("elements can't be empty")
+        }
+        entities.any { it.toBoolean() }.asEntity.dataize()
     }
-    entities.any { it.toBoolean() }.asEntity.dataize()
-})
+)
