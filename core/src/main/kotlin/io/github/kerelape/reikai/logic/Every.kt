@@ -8,4 +8,9 @@ import io.github.kerelape.reikai.core.EntityWrap
  *
  * @since 0.1.0
  */
-class Every(vararg entities: Entity) : EntityWrap(Entity { entities.all { it.toBoolean() }.asEntity.dataize() })
+class Every(vararg entities: Entity) : EntityWrap(Entity {
+    if (entities.isEmpty()) {
+        throw IllegalStateException("elements can't be empty")
+    }
+    entities.all { it.toBoolean() }.asEntity.dataize()
+})

@@ -39,14 +39,4 @@ internal class EveryTest {
             Every(False, False, False).toBoolean()
         )
     }
-
-    /**
-     * Test that it is [True] for empty.
-     */
-    @Test
-    fun `true for empty`() = runBlocking {
-        Assertions.assertTrue(
-            Every().toBoolean()
-        )
-    }
 }

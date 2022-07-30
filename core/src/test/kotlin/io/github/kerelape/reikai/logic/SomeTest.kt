@@ -39,14 +39,4 @@ internal class SomeTest {
             Some(False, False, False).toBoolean()
         )
     }
-
-    /**
-     * Test that it is [False] for empty.
-     */
-    @Test
-    fun `false for empty`() = runBlocking {
-        Assertions.assertFalse(
-            Some().toBoolean()
-        )
-    }
 }
