@@ -30,11 +30,11 @@ import io.github.kerelape.reikai.core.EntityWrap
 /**
  * Optional entity. Dataizes to the value or [Empty] depending on the condition.
  *
- * @param condition Entity in logical format.
  * @param value Value to dataize when the condition passes.
+ * @param condition Entity in logical format.
  * @since 0.2.0
  */
-class Optional(condition: Entity, value: Entity) : EntityWrap(
+class Optional(value: Entity, condition: Entity) : EntityWrap(
     Entity {
         (if (condition.toBoolean()) value else Empty).dataize()
     }
