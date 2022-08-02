@@ -1,5 +1,6 @@
 package io.github.kerelape.reikai.logic
 
+import io.github.kerelape.reikai.core.DataizationException
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
@@ -45,7 +46,7 @@ internal class SomeTest {
      */
     @Test
     fun `can not be empty`() {
-        Assertions.assertThrows(IllegalStateException::class.java) {
+        Assertions.assertThrows(DataizationException::class.java) {
             runBlocking {
                 Some().dataize()
             }
