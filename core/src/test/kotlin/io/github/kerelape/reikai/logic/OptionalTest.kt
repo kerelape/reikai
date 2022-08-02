@@ -21,8 +21,8 @@ internal class OptionalTest {
             "abc",
             String(
                 Optional(
-                    True,
-                    Text("abc")
+                    Text("abc"),
+                    True
                 ).dataize()
             )
         )
@@ -34,7 +34,7 @@ internal class OptionalTest {
     @Test
     fun `dataizes to Empty when the condition is false`() = runBlocking {
         Assertions.assertTrue(
-            Empty.dataize().contentEquals(Optional(False, Text("abc")).dataize())
+            Empty.dataize().contentEquals(Optional(Text("abc"), False).dataize())
         )
     }
 }
