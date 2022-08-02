@@ -51,6 +51,7 @@ Wrap envelope for [Entity](../-entity/index.html).
 | [Xor](../../io.github.kerelape.reikai.binary/-xor/index.html) |
 | [Data](../-data/index.html) |
 | [Empty](../-empty/index.html) |
+| [Error](../-error/index.html) |
 | [Group](../-group/index.html) |
 | [Length](../-length/index.html) |
 | [Content](../../io.github.kerelape.reikai.io/-content/index.html) |

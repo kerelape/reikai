@@ -15,11 +15,15 @@ $dokka.location:io.github.kerelape.reikai.core/Data///PointingToDeclaration/rei
 $dokka.location:io.github.kerelape.reikai.core/Data/Data/#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-data/-data.html
 $dokka.location:io.github.kerelape.reikai.core/Data/Data/#java.nio.ByteBuffer/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-data/-data.html
 $dokka.location:io.github.kerelape.reikai.core/Data/Data/#kotlin.ByteArray/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-data/-data.html
+$dokka.location:io.github.kerelape.reikai.core/DataizationException///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-dataization-exception/index.html
+$dokka.location:io.github.kerelape.reikai.core/DataizationException/DataizationException/#kotlin.String?#kotlin.Throwable?/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-dataization-exception/-dataization-exception.html
 $dokka.location:io.github.kerelape.reikai.core/Empty///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-empty/index.html
 $dokka.location:io.github.kerelape.reikai.core/Entity///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-entity/index.html
 $dokka.location:io.github.kerelape.reikai.core/Entity/dataize/#/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-entity/dataize.html
 $dokka.location:io.github.kerelape.reikai.core/EntityWrap///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-entity-wrap/index.html
 $dokka.location:io.github.kerelape.reikai.core/EntityWrap/EntityWrap/#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-entity-wrap/-entity-wrap.html
+$dokka.location:io.github.kerelape.reikai.core/Error///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-error/index.html
+$dokka.location:io.github.kerelape.reikai.core/Error/Error/#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-error/-error.html
 $dokka.location:io.github.kerelape.reikai.core/Group///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-group/index.html
 $dokka.location:io.github.kerelape.reikai.core/Group/Group/#kotlin.Array[io.github.kerelape.reikai.core.Entity]/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-group/-group.html
 $dokka.location:io.github.kerelape.reikai.core/Length///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-length/index.html
