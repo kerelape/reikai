@@ -29,6 +29,7 @@ import io.github.kerelape.reikai.core.EntityWrap
 
 /**
  * Optional entity. Dataizes to the value or [Empty] depending on the condition.
+ *  Be aware that the first argument is the value, and the second one is the condition.
  *
  * @param value Value to dataize when the condition passes.
  * @param condition Entity in logical format.
