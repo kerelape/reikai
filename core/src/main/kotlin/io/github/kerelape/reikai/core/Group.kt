@@ -24,11 +24,11 @@
 package io.github.kerelape.reikai.core
 
 /**
- * Concatenates items.
+ * Sequence of entities.
  *
  * @since 0.0.0
  */
-class Group(vararg items: Entity) : EntityWrap(
+class Struct(vararg items: Entity) : EntityWrap(
     Entity {
         items
             .map { it.dataize() }
