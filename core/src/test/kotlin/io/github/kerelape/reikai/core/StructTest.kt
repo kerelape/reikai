@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package io.github.kerelape.reikai.io.network.http
+package io.github.kerelape.reikai.core
 
 import io.github.kerelape.reikai.text.Text
 import kotlinx.coroutines.runBlocking
@@ -29,22 +29,22 @@ import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
 /**
- * Test cases for [HttpPacketHeader].
+ * Test cases for [Struct].
  *
  * @since 0.0.0
  */
-internal class HttpPacketHeaderTest {
+internal class StructTest {
     /**
-     * Test that it formats correctly.
+     * Test that it concatenates.
      */
     @Test
-    fun `formats correctly`() = runBlocking {
+    fun concatenates() = runBlocking {
         Assertions.assertEquals(
-            "type\r\nheaders",
+            "Hello, World!",
             String(
-                HttpPacketHeader(
-                    Text("type"),
-                    Text("headers")
+                Struct(
+                    Text("Hello, "),
+                    Text("World!")
                 ).dataize()
             )
         )
