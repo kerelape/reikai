@@ -24,10 +24,10 @@ $dokka.location:io.github.kerelape.reikai.core/EntityWrap///PointingToDeclaratio
 $dokka.location:io.github.kerelape.reikai.core/EntityWrap/EntityWrap/#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-entity-wrap/-entity-wrap.html
 $dokka.location:io.github.kerelape.reikai.core/Error///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-error/index.html
 $dokka.location:io.github.kerelape.reikai.core/Error/Error/#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-error/-error.html
-$dokka.location:io.github.kerelape.reikai.core/Group///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-group/index.html
-$dokka.location:io.github.kerelape.reikai.core/Group/Group/#kotlin.Array[io.github.kerelape.reikai.core.Entity]/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-group/-group.html
 $dokka.location:io.github.kerelape.reikai.core/Length///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-length/index.html
 $dokka.location:io.github.kerelape.reikai.core/Length/Length/#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-length/-length.html
+$dokka.location:io.github.kerelape.reikai.core/Struct///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-struct/index.html
+$dokka.location:io.github.kerelape.reikai.core/Struct/Struct/#kotlin.Array[io.github.kerelape.reikai.core.Entity]/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-struct/-struct.html
 $dokka.location:io.github.kerelape.reikai.io.filesystem////PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.filesystem/index.html
 $dokka.location:io.github.kerelape.reikai.io.filesystem/File///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.filesystem/-file/index.html
 $dokka.location:io.github.kerelape.reikai.io.filesystem/File/File/#io.github.kerelape.reikai.core.Entity#kotlin.Array[java.nio.file.OpenOption]/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.filesystem/-file/-file.html
@@ -40,33 +40,6 @@ $dokka.location:io.github.kerelape.reikai.io.filesystem/RandomAccessFileChannel/
 $dokka.location:io.github.kerelape.reikai.io.filesystem/RandomAccessFileChannel/dataize/#/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.filesystem/-random-access-file-channel/dataize.html
 $dokka.location:io.github.kerelape.reikai.io.filesystem/RandomAccessFileChannel/get/#io.github.kerelape.reikai.core.Entity#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.filesystem/-random-access-file-channel/get.html
 $dokka.location:io.github.kerelape.reikai.io.filesystem/RandomAccessFileChannel/put/#io.github.kerelape.reikai.core.Entity#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.filesystem/-random-access-file-channel/put.html
-$dokka.location:io.github.kerelape.reikai.io.network.http.headers////PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http.headers/index.html
-$dokka.location:io.github.kerelape.reikai.io.network.http.headers/ContentLength///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http.headers/-content-length/index.html
-$dokka.location:io.github.kerelape.reikai.io.network.http.headers/ContentLength/ContentLength/#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http.headers/-content-length/-content-length.html
-$dokka.location:io.github.kerelape.reikai.io.network.http.headers/HttpHeader///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http.headers/-http-header/index.html
-$dokka.location:io.github.kerelape.reikai.io.network.http.headers/HttpHeader/HttpHeader/#io.github.kerelape.reikai.core.Entity#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http.headers/-http-header/-http-header.html
-$dokka.location:io.github.kerelape.reikai.io.network.http.request////PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http.request/index.html
-$dokka.location:io.github.kerelape.reikai.io.network.http.request/HttpGetPacketHeader///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http.request/-http-get-packet-header/index.html
-$dokka.location:io.github.kerelape.reikai.io.network.http.request/HttpGetPacketHeader/HttpGetPacketHeader/#io.github.kerelape.reikai.core.Entity#kotlin.Array[io.github.kerelape.reikai.core.Entity]/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http.request/-http-get-packet-header/-http-get-packet-header.html
-$dokka.location:io.github.kerelape.reikai.io.network.http.request/HttpRequestPacketHeader///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http.request/-http-request-packet-header/index.html
-$dokka.location:io.github.kerelape.reikai.io.network.http.request/HttpRequestPacketHeader/HttpRequestPacketHeader/#io.github.kerelape.reikai.core.Entity#io.github.kerelape.reikai.core.Entity#kotlin.Array[io.github.kerelape.reikai.core.Entity]/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http.request/-http-request-packet-header/-http-request-packet-header.html
-$dokka.location:io.github.kerelape.reikai.io.network.http////PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/index.html
-$dokka.location:io.github.kerelape.reikai.io.network.http/HttpChannel///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/-http-channel/index.html
-$dokka.location:io.github.kerelape.reikai.io.network.http/HttpChannel/HttpChannel/#io.github.kerelape.reikai.io.Channel#io.github.kerelape.reikai.io.Source/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/-http-channel/-http-channel.html
-$dokka.location:io.github.kerelape.reikai.io.network.http/HttpChannel/close/#/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/-http-channel/close.html
-$dokka.location:io.github.kerelape.reikai.io.network.http/HttpChannel/dataize/#/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/-http-channel/dataize.html
-$dokka.location:io.github.kerelape.reikai.io.network.http/HttpChannel/put/#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/-http-channel/put.html
-$dokka.location:io.github.kerelape.reikai.io.network.http/HttpPacket///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/-http-packet/index.html
-$dokka.location:io.github.kerelape.reikai.io.network.http/HttpPacket/HttpPacket/#io.github.kerelape.reikai.core.Entity#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/-http-packet/-http-packet.html
-$dokka.location:io.github.kerelape.reikai.io.network.http/HttpPacketHeader///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/-http-packet-header/index.html
-$dokka.location:io.github.kerelape.reikai.io.network.http/HttpPacketHeader/HttpPacketHeader/#io.github.kerelape.reikai.core.Entity#kotlin.Array[io.github.kerelape.reikai.core.Entity]/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/-http-packet-header/-http-packet-header.html
-$dokka.location:io.github.kerelape.reikai.io.network.http/HttpRequest///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/-http-request/index.html
-$dokka.location:io.github.kerelape.reikai.io.network.http/HttpRequest/HttpRequest/#io.github.kerelape.reikai.io.Source#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/-http-request/-http-request.html
-$dokka.location:io.github.kerelape.reikai.io.network.http/HttpSource///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/-http-source/index.html
-$dokka.location:io.github.kerelape.reikai.io.network.http/HttpSource/HttpSource/#io.github.kerelape.reikai.io.Source/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/-http-source/-http-source.html
-$dokka.location:io.github.kerelape.reikai.io.network.http/HttpSource/close/#/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/-http-source/close.html
-$dokka.location:io.github.kerelape.reikai.io.network.http/HttpSource/open/#/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/-http-source/open.html
-$dokka.location:io.github.kerelape.reikai.io.network.http/Separator///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network.http/-separator/index.html
 $dokka.location:io.github.kerelape.reikai.io.network////PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network/index.html
 $dokka.location:io.github.kerelape.reikai.io.network/Endpoint///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network/-endpoint/index.html
 $dokka.location:io.github.kerelape.reikai.io.network/Endpoint/listen/#/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.network/-endpoint/listen.html
@@ -154,25 +127,13 @@ $dokka.location:io.github.kerelape.reikai.text/Sprintf///PointingToDeclaration/
 $dokka.location:io.github.kerelape.reikai.text/Sprintf/Sprintf/#io.github.kerelape.reikai.core.Entity#kotlin.Array[io.github.kerelape.reikai.core.Entity]/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.text/-sprintf/-sprintf.html
 $dokka.location:io.github.kerelape.reikai.text/Text///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.text/-text/index.html
 $dokka.location:io.github.kerelape.reikai.text/Text/Text/#kotlin.String/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.text/-text/-text.html
-$dokka.location:io.github.kerelape.reikai.typing////PointingToDeclaration/reikai-core/io.github.kerelape.reikai.typing/index.html
-$dokka.location:io.github.kerelape.reikai.typing/Strict///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.typing/-strict/index.html
-$dokka.location:io.github.kerelape.reikai.typing/Strict/Strict/#io.github.kerelape.reikai.typing.Type/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.typing/-strict/-strict.html
-$dokka.location:io.github.kerelape.reikai.typing/Strict/type/#/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.typing/-strict/type.html
-$dokka.location:io.github.kerelape.reikai.typing/Type.BOOLEAN///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}reikai-core/io.github.kerelape.reikai.typing/-type/-b-o-o-l-e-a-n/index.html
-$dokka.location:io.github.kerelape.reikai.typing/Type.INTEGER///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}reikai-core/io.github.kerelape.reikai.typing/-type/-i-n-t-e-g-e-r/index.html
-$dokka.location:io.github.kerelape.reikai.typing/Type.TEXT///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}reikai-core/io.github.kerelape.reikai.typing/-type/-t-e-x-t/index.html
-$dokka.location:io.github.kerelape.reikai.typing/Type///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.typing/-type/index.html
 io.github.kerelape.reikai.binary
 io.github.kerelape.reikai.core
 io.github.kerelape.reikai.io
 io.github.kerelape.reikai.io.filesystem
 io.github.kerelape.reikai.io.network
-io.github.kerelape.reikai.io.network.http
-io.github.kerelape.reikai.io.network.http.headers
-io.github.kerelape.reikai.io.network.http.request
 io.github.kerelape.reikai.logic
 io.github.kerelape.reikai.math
 io.github.kerelape.reikai.math.strict
 io.github.kerelape.reikai.text
-io.github.kerelape.reikai.typing
 

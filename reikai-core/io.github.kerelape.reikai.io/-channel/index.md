@@ -40,5 +40,4 @@ Destination that can be closed.
 | Name |
 |---|
 | [TcpChannel](../../io.github.kerelape.reikai.io.network/-tcp-channel/index.html) |
-| [HttpChannel](../../io.github.kerelape.reikai.io.network.http/-http-channel/index.html) |
 

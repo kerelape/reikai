@@ -41,5 +41,4 @@ Source of data.
 |---|
 | [Endpoint](../../io.github.kerelape.reikai.io.network/-endpoint/index.html) |
 | [TcpSource](../../io.github.kerelape.reikai.io.network/-tcp-source/index.html) |
-| [HttpSource](../../io.github.kerelape.reikai.io.network.http/-http-source/index.html) |
 

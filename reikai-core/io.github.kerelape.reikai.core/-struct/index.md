@@ -1,18 +1,18 @@
 ---
-title: Group
+title: Struct
 ---
-//[reikai-core](../../../index.html)/[io.github.kerelape.reikai.core](../index.html)/[Group](index.html)
+//[reikai-core](../../../index.html)/[io.github.kerelape.reikai.core](../index.html)/[Struct](index.html)
 
 
 
-# Group
+# Struct
 
 
 
 [JVM]\
-class [Group](index.html)(items: [Entity](../-entity/index.html)) : [EntityWrap](../-entity-wrap/index.html)
+class [Struct](index.html)(items: [Entity](../-entity/index.html)) : [EntityWrap](../-entity-wrap/index.html)
 
-Concatenates items.
+Sequence of entities.
 
 
 
@@ -29,7 +29,7 @@ Concatenates items.
 
 | | |
 |---|---|
-| [Group](-group.html) | [JVM]<br>fun [Group](-group.html)(vararg items: [Entity](../-entity/index.html)) |
+| [Struct](-struct.html) | [JVM]<br>fun [Struct](-struct.html)(vararg items: [Entity](../-entity/index.html)) |
 
 
 ## Functions
