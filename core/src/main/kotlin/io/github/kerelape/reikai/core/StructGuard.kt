@@ -1,6 +1,7 @@
 package io.github.kerelape.reikai.core
 
 import io.github.kerelape.reikai.logic.Fork
+import io.github.kerelape.reikai.logic.Identity
 
 /**
 * StructGuard.
