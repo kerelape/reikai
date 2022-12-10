@@ -5,7 +5,9 @@ import io.github.kerelape.reikai.core.EntityWrap
 import io.github.kerelape.reikai.logic.Fork
 
 /**
-* StructGuard. Enchures that [origin] is correct length.
+* StructGuard.
+*
+* Enchures that [origin] is correct length.
 *
 * @since 0.2.0
  */
