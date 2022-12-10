@@ -1,7 +1,5 @@
 package io.github.kerelape.reikai.core
 
-import io.github.kerelape.reikai.core.Entity
-import io.github.kerelape.reikai.core.EntityWrap
 import io.github.kerelape.reikai.logic.Fork
 
 /**
