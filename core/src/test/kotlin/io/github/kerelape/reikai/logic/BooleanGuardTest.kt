@@ -21,12 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package io.github.kerelape.reikai.guards
+package io.github.kerelape.reikai.logic
 
 import io.github.kerelape.reikai.core.Data
 import io.github.kerelape.reikai.core.DataizationException
 import io.github.kerelape.reikai.core.Empty
-import io.github.kerelape.reikai.logic.True
 import io.github.kerelape.reikai.text.Text
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions
