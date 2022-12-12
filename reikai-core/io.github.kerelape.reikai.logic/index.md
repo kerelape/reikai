@@ -14,6 +14,7 @@ title: io.github.kerelape.reikai.logic
 
 | Name | Summary |
 |---|---|
+| [BooleanGuard](-boolean-guard/index.html) | [JVM]<br>class [BooleanGuard](-boolean-guard/index.html)(origin: [Entity](../io.github.kerelape.reikai.core/-entity/index.html), continuation: [Entity](../io.github.kerelape.reikai.core/-entity/index.html)) : [EntityWrap](../io.github.kerelape.reikai.core/-entity-wrap/index.html)<br>BooleanGuard. |
 | [Every](-every/index.html) | [JVM]<br>class [Every](-every/index.html)(entities: [Entity](../io.github.kerelape.reikai.core/-entity/index.html)) : [EntityWrap](../io.github.kerelape.reikai.core/-entity-wrap/index.html)<br>Every. [True](-true/index.html) if all elements is [True](-true/index.html). |
 | [False](-false/index.html) | [JVM]<br>object [False](-false/index.html) : [EntityWrap](../io.github.kerelape.reikai.core/-entity-wrap/index.html)<br>False object that always dataizes as 0. |
 | [Fork](-fork/index.html) | [JVM]<br>class [Fork](-fork/index.html)(condition: [Entity](../io.github.kerelape.reikai.core/-entity/index.html), value: [Entity](../io.github.kerelape.reikai.core/-entity/index.html), fallback: [Entity](../io.github.kerelape.reikai.core/-entity/index.html)) : [EntityWrap](../io.github.kerelape.reikai.core/-entity-wrap/index.html)<br>Fork. Selects value or fallback depending on condition. |

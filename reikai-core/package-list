@@ -28,6 +28,8 @@ $dokka.location:io.github.kerelape.reikai.core/Length///PointingToDeclaration/r
 $dokka.location:io.github.kerelape.reikai.core/Length/Length/#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-length/-length.html
 $dokka.location:io.github.kerelape.reikai.core/Struct///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-struct/index.html
 $dokka.location:io.github.kerelape.reikai.core/Struct/Struct/#kotlin.Array[io.github.kerelape.reikai.core.Entity]/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-struct/-struct.html
+$dokka.location:io.github.kerelape.reikai.core/StructGuard///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-struct-guard/index.html
+$dokka.location:io.github.kerelape.reikai.core/StructGuard/StructGuard/#io.github.kerelape.reikai.core.Entity#io.github.kerelape.reikai.core.Entity#io.github.kerelape.reikai.core.Entity#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.core/-struct-guard/-struct-guard.html
 $dokka.location:io.github.kerelape.reikai.io.filesystem////PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.filesystem/index.html
 $dokka.location:io.github.kerelape.reikai.io.filesystem/File///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.filesystem/-file/index.html
 $dokka.location:io.github.kerelape.reikai.io.filesystem/File/File/#io.github.kerelape.reikai.core.Entity#kotlin.Array[java.nio.file.OpenOption]/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.io.filesystem/-file/-file.html
@@ -98,6 +100,8 @@ $dokka.location:io.github.kerelape.reikai.io/Source/open/#/PointingToDeclaration
 $dokka.location:io.github.kerelape.reikai.logic////PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/index.html
 $dokka.location:io.github.kerelape.reikai.logic//asEntity/kotlin.Boolean#/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/as-entity.html
 $dokka.location:io.github.kerelape.reikai.logic//toBoolean/io.github.kerelape.reikai.core.Entity#/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/to-boolean.html
+$dokka.location:io.github.kerelape.reikai.logic/BooleanGuard///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/-boolean-guard/index.html
+$dokka.location:io.github.kerelape.reikai.logic/BooleanGuard/BooleanGuard/#io.github.kerelape.reikai.core.Entity#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/-boolean-guard/-boolean-guard.html
 $dokka.location:io.github.kerelape.reikai.logic/Every///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/-every/index.html
 $dokka.location:io.github.kerelape.reikai.logic/Every/Every/#kotlin.Array[io.github.kerelape.reikai.core.Entity]/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/-every/-every.html
 $dokka.location:io.github.kerelape.reikai.logic/False///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.logic/-false/index.html
@@ -117,6 +121,8 @@ $dokka.location:io.github.kerelape.reikai.math.strict/Sum///PointingToDeclaratio
 $dokka.location:io.github.kerelape.reikai.math.strict/Sum/Sum/#io.github.kerelape.reikai.core.Entity#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.math.strict/-sum/-sum.html
 $dokka.location:io.github.kerelape.reikai.math////PointingToDeclaration/reikai-core/io.github.kerelape.reikai.math/index.html
 $dokka.location:io.github.kerelape.reikai.math//asEntity/kotlin.Number#/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.math/as-entity.html
+$dokka.location:io.github.kerelape.reikai.math/IntegerGuard///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.math/-integer-guard/index.html
+$dokka.location:io.github.kerelape.reikai.math/IntegerGuard/IntegerGuard/#io.github.kerelape.reikai.core.Entity#io.github.kerelape.reikai.core.Entity/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.math/-integer-guard/-integer-guard.html
 $dokka.location:io.github.kerelape.reikai.text////PointingToDeclaration/reikai-core/io.github.kerelape.reikai.text/index.html
 $dokka.location:io.github.kerelape.reikai.text//asEntity/kotlin.String#/PointingToDeclaration/reikai-core/io.github.kerelape.reikai.text/as-entity.html
 $dokka.location:io.github.kerelape.reikai.text/IntegerAsText///PointingToDeclaration/reikai-core/io.github.kerelape.reikai.text/-integer-as-text/index.html

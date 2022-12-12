@@ -22,6 +22,7 @@ title: io.github.kerelape.reikai.core
 | [Error](-error/index.html) | [JVM]<br>class [Error](-error/index.html)(message: [Entity](-entity/index.html) = Empty) : [EntityWrap](-entity-wrap/index.html)<br>Error. |
 | [Length](-length/index.html) | [JVM]<br>class [Length](-length/index.html)(origin: [Entity](-entity/index.html)) : [EntityWrap](-entity-wrap/index.html)<br>Length of the entity. |
 | [Struct](-struct/index.html) | [JVM]<br>class [Struct](-struct/index.html)(items: [Entity](-entity/index.html)) : [EntityWrap](-entity-wrap/index.html)<br>Sequence of entities. |
+| [StructGuard](-struct-guard/index.html) | [JVM]<br>class [StructGuard](-struct-guard/index.html)(origin: [Entity](-entity/index.html), length: [Entity](-entity/index.html), message: [Entity](-entity/index.html), continuation: [Entity](-entity/index.html)) : [EntityWrap](-entity-wrap/index.html)<br>StructGuard. |
 
 
 ## Properties

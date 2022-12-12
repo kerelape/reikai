@@ -54,7 +54,9 @@ Wrap envelope for [Entity](../-entity/index.html).
 | [Error](../-error/index.html) |
 | [Length](../-length/index.html) |
 | [Struct](../-struct/index.html) |
+| [StructGuard](../-struct-guard/index.html) |
 | [Content](../../io.github.kerelape.reikai.io/-content/index.html) |
+| [BooleanGuard](../../io.github.kerelape.reikai.logic/-boolean-guard/index.html) |
 | [Every](../../io.github.kerelape.reikai.logic/-every/index.html) |
 | [False](../../io.github.kerelape.reikai.logic/-false/index.html) |
 | [Fork](../../io.github.kerelape.reikai.logic/-fork/index.html) |
@@ -62,6 +64,7 @@ Wrap envelope for [Entity](../-entity/index.html).
 | [Optional](../../io.github.kerelape.reikai.logic/-optional/index.html) |
 | [Some](../../io.github.kerelape.reikai.logic/-some/index.html) |
 | [True](../../io.github.kerelape.reikai.logic/-true/index.html) |
+| [IntegerGuard](../../io.github.kerelape.reikai.math/-integer-guard/index.html) |
 | [Integer](../../io.github.kerelape.reikai.math.strict/-integer/index.html) |
 | [Sum](../../io.github.kerelape.reikai.math.strict/-sum/index.html) |
 | [IntegerAsText](../../io.github.kerelape.reikai.text/-integer-as-text/index.html) |
