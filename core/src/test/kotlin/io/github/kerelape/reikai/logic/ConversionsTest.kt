@@ -23,8 +23,8 @@
  */
 package io.github.kerelape.reikai.logic
 
-import io.github.kerelape.reikai.core.Data
-import io.github.kerelape.reikai.core.Empty
+import io.github.kerelape.reikai.Data
+import io.github.kerelape.reikai.Empty
 import io.github.kerelape.reikai.math.asEntity
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions

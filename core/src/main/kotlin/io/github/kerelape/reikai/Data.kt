@@ -21,18 +21,21 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package io.github.kerelape.reikai.core
+package io.github.kerelape.reikai
+
+import java.nio.ByteBuffer
 
 /**
- * Basic type in Reikai. Alternative to Object.
+ * Simple data entity.
  *
  * @since 0.0.0
  */
-fun interface Entity {
-    /**
-     * Representation of the object in bytes.
-     *
-     * @return This object in binary format.
-     */
-    suspend fun dataize(): ByteArray
+class Data(bytes: Entity) : EntityWrap(bytes) {
+    constructor(bytes: ByteArray) : this(Entity { bytes })
+
+    constructor(buffer: ByteBuffer) : this(
+        Entity {
+            ByteArray(buffer.limit()) { buffer.get(it) }
+        }
+    )
 }

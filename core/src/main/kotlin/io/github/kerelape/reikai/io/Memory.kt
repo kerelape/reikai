@@ -23,7 +23,7 @@
  */
 package io.github.kerelape.reikai.io
 
-import io.github.kerelape.reikai.core.Entity
+import io.github.kerelape.reikai.Entity
 import io.github.kerelape.reikai.logic.Fork
 import io.github.kerelape.reikai.logic.Identity
 import io.github.kerelape.reikai.math.asEntity

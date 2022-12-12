@@ -1,4 +1,4 @@
-package io.github.kerelape.reikai.core
+package io.github.kerelape.reikai
 
 /**
  * Dataization exception. Thrown when an entity could not be dataized for a reason.

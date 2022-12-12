@@ -21,27 +21,13 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package io.github.kerelape.reikai.core
+package io.github.kerelape.reikai
 
-import io.github.kerelape.reikai.logic.Fork
-import io.github.kerelape.reikai.logic.Identity
+import io.github.kerelape.reikai.math.asEntity
 
 /**
-* StructGuard.
-*
-* Ensures that [origin] is correct length.
-*
-* @since 0.2.0
+ * Length of the entity.
+ *
+ * @since 0.0.0
  */
-class StructGuard(
-    origin: Entity,
-    length: Entity,
-    message: Entity,
-    continuation: Entity
-) : EntityWrap(
-    Fork(
-        Identity(Length(origin), length),
-        continuation,
-        Error(message)
-    )
-)
+class Length(origin: Entity) : EntityWrap(Entity { origin.dataize().size.asEntity.dataize() })

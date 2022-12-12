@@ -23,7 +23,7 @@
  */
 package io.github.kerelape.reikai.text
 
-import io.github.kerelape.reikai.core.EntityWrap
+import io.github.kerelape.reikai.EntityWrap
 
 /**
  * Newline character.

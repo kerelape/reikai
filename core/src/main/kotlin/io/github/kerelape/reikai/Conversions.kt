@@ -21,17 +21,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package io.github.kerelape.reikai.core
+package io.github.kerelape.reikai
 
 /**
- * Sequence of entities.
- *
- * @since 0.0.0
+ * Entity representation of the [ByteArray].
  */
-class Struct(vararg items: Entity) : EntityWrap(
-    Entity {
-        items
-            .map { it.dataize() }
-            .reduce { acc, bytes -> acc.plus(bytes) }
-    }
-)
+val ByteArray.asEntity: Entity
+    get() = Data(this)

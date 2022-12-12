@@ -23,8 +23,8 @@
  */
 package io.github.kerelape.reikai.logic
 
-import io.github.kerelape.reikai.core.Entity
-import io.github.kerelape.reikai.core.EntityWrap
+import io.github.kerelape.reikai.Entity
+import io.github.kerelape.reikai.EntityWrap
 
 /**
  * False object that always dataizes as 0.

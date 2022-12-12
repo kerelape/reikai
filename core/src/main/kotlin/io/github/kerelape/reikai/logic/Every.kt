@@ -1,8 +1,8 @@
 package io.github.kerelape.reikai.logic
 
-import io.github.kerelape.reikai.core.Entity
-import io.github.kerelape.reikai.core.EntityWrap
-import io.github.kerelape.reikai.core.Error
+import io.github.kerelape.reikai.Entity
+import io.github.kerelape.reikai.EntityWrap
+import io.github.kerelape.reikai.Error
 import io.github.kerelape.reikai.text.Text
 
 /**

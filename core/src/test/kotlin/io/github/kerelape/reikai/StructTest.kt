@@ -21,8 +21,9 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package io.github.kerelape.reikai.core
+package io.github.kerelape.reikai
 
+import io.github.kerelape.reikai.Struct
 import io.github.kerelape.reikai.text.Text
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions

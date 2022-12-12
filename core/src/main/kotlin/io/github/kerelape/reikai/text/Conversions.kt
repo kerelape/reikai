@@ -23,7 +23,7 @@
  */
 package io.github.kerelape.reikai.text
 
-import io.github.kerelape.reikai.core.Entity
+import io.github.kerelape.reikai.Entity
 
 /**
  * Entity representation of the string.

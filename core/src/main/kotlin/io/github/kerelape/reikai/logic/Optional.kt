@@ -23,9 +23,9 @@
  */
 package io.github.kerelape.reikai.logic
 
-import io.github.kerelape.reikai.core.Empty
-import io.github.kerelape.reikai.core.Entity
-import io.github.kerelape.reikai.core.EntityWrap
+import io.github.kerelape.reikai.Empty
+import io.github.kerelape.reikai.Entity
+import io.github.kerelape.reikai.EntityWrap
 
 /**
  * Optional entity. Dataizes to the value or [Empty] depending on the condition.

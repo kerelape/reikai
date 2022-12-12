@@ -23,6 +23,7 @@
  */
 package io.github.kerelape.reikai.io.network
 
+import io.github.kerelape.reikai.Entity
 import io.github.kerelape.reikai.io.Channel
 import io.github.kerelape.reikai.io.Source
 import io.github.kerelape.reikai.logic.True
@@ -74,7 +75,7 @@ class TcpSource(private val channel: AsynchronousServerSocketChannel) : Source {
      *
      * @return [True]
      */
-    override suspend fun close(): io.github.kerelape.reikai.core.Entity {
+    override suspend fun close(): Entity {
         withContext(Dispatchers.IO) {
             this@TcpSource.channel.close()
         }

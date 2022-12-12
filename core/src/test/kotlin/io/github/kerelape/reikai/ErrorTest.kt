@@ -1,4 +1,4 @@
-package io.github.kerelape.reikai.core
+package io.github.kerelape.reikai
 
 import io.github.kerelape.reikai.text.Text
 import kotlinx.coroutines.runBlocking

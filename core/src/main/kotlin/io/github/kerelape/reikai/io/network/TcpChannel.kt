@@ -23,7 +23,7 @@
  */
 package io.github.kerelape.reikai.io.network
 
-import io.github.kerelape.reikai.core.Entity
+import io.github.kerelape.reikai.Entity
 import io.github.kerelape.reikai.io.Channel
 import io.github.kerelape.reikai.io.Source
 import kotlinx.coroutines.Dispatchers

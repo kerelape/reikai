@@ -23,9 +23,9 @@
  */
 package io.github.kerelape.reikai.math
 
-import io.github.kerelape.reikai.core.Entity
-import io.github.kerelape.reikai.core.EntityWrap
-import io.github.kerelape.reikai.core.StructGuard
+import io.github.kerelape.reikai.Entity
+import io.github.kerelape.reikai.EntityWrap
+import io.github.kerelape.reikai.StructGuard
 import io.github.kerelape.reikai.text.Text
 
 /**

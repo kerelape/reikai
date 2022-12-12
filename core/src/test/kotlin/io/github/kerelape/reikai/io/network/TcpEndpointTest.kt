@@ -23,7 +23,7 @@
  */
 package io.github.kerelape.reikai.io.network
 
-import io.github.kerelape.reikai.core.Data
+import io.github.kerelape.reikai.Data
 import io.github.kerelape.reikai.math.asEntity
 import io.github.kerelape.reikai.text.asEntity
 import kotlinx.coroutines.launch

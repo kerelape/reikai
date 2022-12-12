@@ -23,7 +23,7 @@
  */
 package io.github.kerelape.reikai.math
 
-import io.github.kerelape.reikai.core.Entity
+import io.github.kerelape.reikai.Entity
 import io.github.kerelape.reikai.math.strict.Integer
 
 /**

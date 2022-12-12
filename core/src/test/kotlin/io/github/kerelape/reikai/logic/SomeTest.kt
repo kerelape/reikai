@@ -1,6 +1,6 @@
 package io.github.kerelape.reikai.logic
 
-import io.github.kerelape.reikai.core.DataizationException
+import io.github.kerelape.reikai.DataizationException
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test

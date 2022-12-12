@@ -23,8 +23,8 @@
  */
 package io.github.kerelape.reikai.io
 
-import io.github.kerelape.reikai.core.Data
-import io.github.kerelape.reikai.core.Entity
+import io.github.kerelape.reikai.Data
+import io.github.kerelape.reikai.Entity
 import java.math.BigInteger
 import java.nio.ByteBuffer
 

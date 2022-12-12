@@ -1,6 +1,6 @@
 package io.github.kerelape.reikai.io
 
-import io.github.kerelape.reikai.core.Data
+import io.github.kerelape.reikai.Data
 import io.github.kerelape.reikai.logic.Identity
 import io.github.kerelape.reikai.logic.toBoolean
 import io.github.kerelape.reikai.math.asEntity

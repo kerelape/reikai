@@ -23,7 +23,7 @@
  */
 package io.github.kerelape.reikai.io.filesystem
 
-import io.github.kerelape.reikai.core.Entity
+import io.github.kerelape.reikai.Entity
 import io.github.kerelape.reikai.io.RandomAccessChannel
 import io.github.kerelape.reikai.io.RandomAccessSource
 import io.github.kerelape.reikai.logic.False

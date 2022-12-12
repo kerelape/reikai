@@ -1,6 +1,6 @@
 package io.github.kerelape.reikai.logic
 
-import io.github.kerelape.reikai.core.Empty
+import io.github.kerelape.reikai.Empty
 import io.github.kerelape.reikai.text.Text
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions

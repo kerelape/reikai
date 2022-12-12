@@ -1,4 +1,4 @@
-package io.github.kerelape.reikai.core
+package io.github.kerelape.reikai
 
 /**
  * Error.
