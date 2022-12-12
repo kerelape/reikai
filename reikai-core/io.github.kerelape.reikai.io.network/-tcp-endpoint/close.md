@@ -10,7 +10,7 @@ title: close
 
 
 [JVM]\
-open suspend override fun [close](close.html)(): [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)
+open suspend override fun [close](close.html)(): [Entity](../../io.github.kerelape.reikai/-entity/index.html)
 
 
 

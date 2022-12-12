@@ -1,7 +1,7 @@
 ---
 title: EntityWrap
 ---
-//[reikai-core](../../../index.html)/[io.github.kerelape.reikai.core](../index.html)/[EntityWrap](index.html)
+//[reikai-core](../../../index.html)/[io.github.kerelape.reikai](../index.html)/[EntityWrap](index.html)
 
 
 
@@ -45,16 +45,16 @@ Wrap envelope for [Entity](../-entity/index.html).
 
 | Name |
 |---|
-| [And](../../io.github.kerelape.reikai.binary/-and/index.html) |
-| [Not](../../io.github.kerelape.reikai.binary/-not/index.html) |
-| [Or](../../io.github.kerelape.reikai.binary/-or/index.html) |
-| [Xor](../../io.github.kerelape.reikai.binary/-xor/index.html) |
 | [Data](../-data/index.html) |
 | [Empty](../-empty/index.html) |
 | [Error](../-error/index.html) |
 | [Length](../-length/index.html) |
 | [Struct](../-struct/index.html) |
 | [StructGuard](../-struct-guard/index.html) |
+| [And](../../io.github.kerelape.reikai.binary/-and/index.html) |
+| [Not](../../io.github.kerelape.reikai.binary/-not/index.html) |
+| [Or](../../io.github.kerelape.reikai.binary/-or/index.html) |
+| [Xor](../../io.github.kerelape.reikai.binary/-xor/index.html) |
 | [Content](../../io.github.kerelape.reikai.io/-content/index.html) |
 | [BooleanGuard](../../io.github.kerelape.reikai.logic/-boolean-guard/index.html) |
 | [Every](../../io.github.kerelape.reikai.logic/-every/index.html) |

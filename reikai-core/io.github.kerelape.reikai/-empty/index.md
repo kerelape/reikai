@@ -1,7 +1,7 @@
 ---
 title: Empty
 ---
-//[reikai-core](../../../index.html)/[io.github.kerelape.reikai.core](../index.html)/[Empty](index.html)
+//[reikai-core](../../../index.html)/[io.github.kerelape.reikai](../index.html)/[Empty](index.html)
 
 
 

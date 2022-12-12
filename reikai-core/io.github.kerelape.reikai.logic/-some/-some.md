@@ -10,7 +10,7 @@ title: Some
 
 
 [JVM]\
-fun [Some](-some.html)(vararg entities: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html))
+fun [Some](-some.html)(vararg entities: [Entity](../../io.github.kerelape.reikai/-entity/index.html))
 
 
 

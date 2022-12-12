@@ -1,7 +1,7 @@
 ---
 title: Data
 ---
-//[reikai-core](../../../index.html)/[io.github.kerelape.reikai.core](../index.html)/[Data](index.html)/[Data](-data.html)
+//[reikai-core](../../../index.html)/[io.github.kerelape.reikai](../index.html)/[Data](index.html)/[Data](-data.html)
 
 
 

@@ -42,5 +42,5 @@ Sequence of data.
 | Name | Summary |
 |---|---|
 | [dataize](dataize.html) | [JVM]<br>open suspend override fun [dataize](dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
-| [put](put.html) | [JVM]<br>open suspend override fun [put](put.html)(data: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)): [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)<br>Append [data](put.html). |
+| [put](put.html) | [JVM]<br>open suspend override fun [put](put.html)(data: [Entity](../../io.github.kerelape.reikai/-entity/index.html)): [Entity](../../io.github.kerelape.reikai/-entity/index.html)<br>Append [data](put.html). |
 

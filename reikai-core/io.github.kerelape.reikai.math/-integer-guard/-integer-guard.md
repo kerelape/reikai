@@ -10,7 +10,7 @@ title: IntegerGuard
 
 
 [JVM]\
-fun [IntegerGuard](-integer-guard.html)(origin: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), continuation: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html))
+fun [IntegerGuard](-integer-guard.html)(origin: [Entity](../../io.github.kerelape.reikai/-entity/index.html), continuation: [Entity](../../io.github.kerelape.reikai/-entity/index.html))
 
 
 

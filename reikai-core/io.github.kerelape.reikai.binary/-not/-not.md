@@ -10,7 +10,7 @@ title: Not
 
 
 [JVM]\
-fun [Not](-not.html)(origin: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html))
+fun [Not](-not.html)(origin: [Entity](../../io.github.kerelape.reikai/-entity/index.html))
 
 
 

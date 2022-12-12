@@ -1,7 +1,7 @@
 ---
 title: Error
 ---
-//[reikai-core](../../../index.html)/[io.github.kerelape.reikai.core](../index.html)/[Error](index.html)
+//[reikai-core](../../../index.html)/[io.github.kerelape.reikai](../index.html)/[Error](index.html)
 
 
 
@@ -29,7 +29,7 @@ Error.
 
 | | |
 |---|---|
-| [io.github.kerelape.reikai.core.DataizationException](../-dataization-exception/index.html) | with the message. |
+| [io.github.kerelape.reikai.DataizationException](../-dataization-exception/index.html) | with the message. |
 
 
 ## Constructors

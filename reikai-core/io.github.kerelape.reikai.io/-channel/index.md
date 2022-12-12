@@ -30,8 +30,8 @@ Destination that can be closed.
 | Name | Summary |
 |---|---|
 | [close](close.html) | [JVM]<br>abstract suspend fun [close](close.html)(): [Source](../-source/index.html)<br>Close the channel. |
-| [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html) | [JVM]<br>abstract suspend fun [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
-| [put](../-destination/put.html) | [JVM]<br>abstract suspend fun [put](../-destination/put.html)(data: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)): [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)<br>Put arbitrary [data](../-destination/put.html) to the destination. |
+| [dataize](../../io.github.kerelape.reikai/-entity/dataize.html) | [JVM]<br>abstract suspend fun [dataize](../../io.github.kerelape.reikai/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
+| [put](../-destination/put.html) | [JVM]<br>abstract suspend fun [put](../-destination/put.html)(data: [Entity](../../io.github.kerelape.reikai/-entity/index.html)): [Entity](../../io.github.kerelape.reikai/-entity/index.html)<br>Put arbitrary [data](../-destination/put.html) to the destination. |
 
 
 ## Inheritors

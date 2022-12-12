@@ -10,7 +10,7 @@ title: Xor
 
 
 [JVM]\
-fun [Xor](-xor.html)(vararg elements: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html))
+fun [Xor](-xor.html)(vararg elements: [Entity](../../io.github.kerelape.reikai/-entity/index.html))
 
 
 

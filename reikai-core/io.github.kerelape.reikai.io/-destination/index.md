@@ -10,7 +10,7 @@ title: Destination
 
 
 [JVM]\
-interface [Destination](index.html) : [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)
+interface [Destination](index.html) : [Entity](../../io.github.kerelape.reikai/-entity/index.html)
 
 Destination of data.
 
@@ -29,8 +29,8 @@ Destination of data.
 
 | Name | Summary |
 |---|---|
-| [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html) | [JVM]<br>abstract suspend fun [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
-| [put](put.html) | [JVM]<br>abstract suspend fun [put](put.html)(data: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)): [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)<br>Put arbitrary [data](put.html) to the destination. |
+| [dataize](../../io.github.kerelape.reikai/-entity/dataize.html) | [JVM]<br>abstract suspend fun [dataize](../../io.github.kerelape.reikai/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
+| [put](put.html) | [JVM]<br>abstract suspend fun [put](put.html)(data: [Entity](../../io.github.kerelape.reikai/-entity/index.html)): [Entity](../../io.github.kerelape.reikai/-entity/index.html)<br>Put arbitrary [data](put.html) to the destination. |
 
 
 ## Inheritors

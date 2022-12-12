@@ -10,7 +10,7 @@ title: DynamicHeap
 
 
 [JVM]\
-fun [DynamicHeap](-dynamic-heap.html)(limit: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html) = (-1).asEntity)
+fun [DynamicHeap](-dynamic-heap.html)(limit: [Entity](../../io.github.kerelape.reikai/-entity/index.html) = (-1).asEntity)
 
 
 

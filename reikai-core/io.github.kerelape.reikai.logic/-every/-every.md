@@ -10,7 +10,7 @@ title: Every
 
 
 [JVM]\
-fun [Every](-every.html)(vararg entities: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html))
+fun [Every](-every.html)(vararg entities: [Entity](../../io.github.kerelape.reikai/-entity/index.html))
 
 
 

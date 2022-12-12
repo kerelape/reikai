@@ -10,7 +10,7 @@ title: Optional
 
 
 [JVM]\
-fun [Optional](-optional.html)(value: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), condition: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html))
+fun [Optional](-optional.html)(value: [Entity](../../io.github.kerelape.reikai/-entity/index.html), condition: [Entity](../../io.github.kerelape.reikai/-entity/index.html))
 
 
 

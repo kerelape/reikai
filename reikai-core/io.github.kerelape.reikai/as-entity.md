@@ -1,7 +1,7 @@
 ---
 title: asEntity
 ---
-//[reikai-core](../../index.html)/[io.github.kerelape.reikai.core](index.html)/[asEntity](as-entity.html)
+//[reikai-core](../../index.html)/[io.github.kerelape.reikai](index.html)/[asEntity](as-entity.html)
 
 
 

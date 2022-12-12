@@ -10,7 +10,7 @@ title: put
 
 
 [JVM]\
-abstract suspend fun [put](put.html)(position: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), data: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)): [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)
+abstract suspend fun [put](put.html)(position: [Entity](../../io.github.kerelape.reikai/-entity/index.html), data: [Entity](../../io.github.kerelape.reikai/-entity/index.html)): [Entity](../../io.github.kerelape.reikai/-entity/index.html)
 
 
 

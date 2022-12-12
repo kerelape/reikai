@@ -10,7 +10,7 @@ title: Sum
 
 
 [JVM]\
-fun [Sum](-sum.html)(base: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), addend: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html))
+fun [Sum](-sum.html)(base: [Entity](../../io.github.kerelape.reikai/-entity/index.html), addend: [Entity](../../io.github.kerelape.reikai/-entity/index.html))
 
 
 

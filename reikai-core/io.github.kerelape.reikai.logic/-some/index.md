@@ -10,7 +10,7 @@ title: Some
 
 
 [JVM]\
-class [Some](index.html)(entities: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)) : [EntityWrap](../../io.github.kerelape.reikai.core/-entity-wrap/index.html)
+class [Some](index.html)(entities: [Entity](../../io.github.kerelape.reikai/-entity/index.html)) : [EntityWrap](../../io.github.kerelape.reikai/-entity-wrap/index.html)
 
 Some. [True](../-true/index.html) if any of the elements is [True](../-true/index.html).
 
@@ -29,7 +29,7 @@ Some. [True](../-true/index.html) if any of the elements is [True](../-true/inde
 
 | | |
 |---|---|
-| [Some](-some.html) | [JVM]<br>fun [Some](-some.html)(vararg entities: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)) |
+| [Some](-some.html) | [JVM]<br>fun [Some](-some.html)(vararg entities: [Entity](../../io.github.kerelape.reikai/-entity/index.html)) |
 
 
 ## Functions
@@ -37,5 +37,5 @@ Some. [True](../-true/index.html) if any of the elements is [True](../-true/inde
 
 | Name | Summary |
 |---|---|
-| [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html) | [JVM]<br>open suspend override fun [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
+| [dataize](../../io.github.kerelape.reikai/-entity/dataize.html) | [JVM]<br>open suspend override fun [dataize](../../io.github.kerelape.reikai/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
 

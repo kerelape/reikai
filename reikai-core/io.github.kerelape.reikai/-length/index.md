@@ -1,18 +1,18 @@
 ---
-title: Struct
+title: Length
 ---
-//[reikai-core](../../../index.html)/[io.github.kerelape.reikai.core](../index.html)/[Struct](index.html)
+//[reikai-core](../../../index.html)/[io.github.kerelape.reikai](../index.html)/[Length](index.html)
 
 
 
-# Struct
+# Length
 
 
 
 [JVM]\
-class [Struct](index.html)(items: [Entity](../-entity/index.html)) : [EntityWrap](../-entity-wrap/index.html)
+class [Length](index.html)(origin: [Entity](../-entity/index.html)) : [EntityWrap](../-entity-wrap/index.html)
 
-Sequence of entities.
+Length of the entity.
 
 
 
@@ -29,7 +29,7 @@ Sequence of entities.
 
 | | |
 |---|---|
-| [Struct](-struct.html) | [JVM]<br>fun [Struct](-struct.html)(vararg items: [Entity](../-entity/index.html)) |
+| [Length](-length.html) | [JVM]<br>fun [Length](-length.html)(origin: [Entity](../-entity/index.html)) |
 
 
 ## Functions

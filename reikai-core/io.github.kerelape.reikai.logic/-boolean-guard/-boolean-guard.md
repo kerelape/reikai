@@ -10,7 +10,7 @@ title: BooleanGuard
 
 
 [JVM]\
-fun [BooleanGuard](-boolean-guard.html)(origin: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), continuation: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html))
+fun [BooleanGuard](-boolean-guard.html)(origin: [Entity](../../io.github.kerelape.reikai/-entity/index.html), continuation: [Entity](../../io.github.kerelape.reikai/-entity/index.html))
 
 
 

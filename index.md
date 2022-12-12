@@ -14,8 +14,8 @@ title: reikai-core
 
 | Name |
 |---|
+| [io.github.kerelape.reikai](reikai-core/io.github.kerelape.reikai/index.html) |
 | [io.github.kerelape.reikai.binary](reikai-core/io.github.kerelape.reikai.binary/index.html) |
-| [io.github.kerelape.reikai.core](reikai-core/io.github.kerelape.reikai.core/index.html) |
 | [io.github.kerelape.reikai.io](reikai-core/io.github.kerelape.reikai.io/index.html) |
 | [io.github.kerelape.reikai.io.filesystem](reikai-core/io.github.kerelape.reikai.io.filesystem/index.html) |
 | [io.github.kerelape.reikai.io.network](reikai-core/io.github.kerelape.reikai.io.network/index.html) |

@@ -10,7 +10,7 @@ title: asEntity
 
 
 [JVM]\
-val [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html).[asEntity](as-entity.html): [Entity](../io.github.kerelape.reikai.core/-entity/index.html)
+val [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html).[asEntity](as-entity.html): [Entity](../io.github.kerelape.reikai/-entity/index.html)
 
 
 

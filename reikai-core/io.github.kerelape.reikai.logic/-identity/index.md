@@ -10,7 +10,7 @@ title: Identity
 
 
 [JVM]\
-class [Identity](index.html)(first: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), second: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)) : [EntityWrap](../../io.github.kerelape.reikai.core/-entity-wrap/index.html)
+class [Identity](index.html)(first: [Entity](../../io.github.kerelape.reikai/-entity/index.html), second: [Entity](../../io.github.kerelape.reikai/-entity/index.html)) : [EntityWrap](../../io.github.kerelape.reikai/-entity-wrap/index.html)
 
 Equality of entities.
 
@@ -29,7 +29,7 @@ Equality of entities.
 
 | | |
 |---|---|
-| [Identity](-identity.html) | [JVM]<br>fun [Identity](-identity.html)(first: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), second: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)) |
+| [Identity](-identity.html) | [JVM]<br>fun [Identity](-identity.html)(first: [Entity](../../io.github.kerelape.reikai/-entity/index.html), second: [Entity](../../io.github.kerelape.reikai/-entity/index.html)) |
 
 
 ## Functions
@@ -37,5 +37,5 @@ Equality of entities.
 
 | Name | Summary |
 |---|---|
-| [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html) | [JVM]<br>open suspend override fun [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
+| [dataize](../../io.github.kerelape.reikai/-entity/dataize.html) | [JVM]<br>open suspend override fun [dataize](../../io.github.kerelape.reikai/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
 

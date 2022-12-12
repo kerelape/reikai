@@ -10,7 +10,7 @@ title: File
 
 
 [JVM]\
-fun [File](-file.html)(path: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), vararg options: [OpenOption](https://docs.oracle.com/javase/8/docs/api/java/nio/file/OpenOption.html))
+fun [File](-file.html)(path: [Entity](../../io.github.kerelape.reikai/-entity/index.html), vararg options: [OpenOption](https://docs.oracle.com/javase/8/docs/api/java/nio/file/OpenOption.html))
 
 
 

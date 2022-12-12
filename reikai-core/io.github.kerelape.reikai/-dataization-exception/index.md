@@ -1,7 +1,7 @@
 ---
 title: DataizationException
 ---
-//[reikai-core](../../../index.html)/[io.github.kerelape.reikai.core](../index.html)/[DataizationException](index.html)
+//[reikai-core](../../../index.html)/[io.github.kerelape.reikai](../index.html)/[DataizationException](index.html)
 
 
 

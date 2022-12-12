@@ -10,7 +10,7 @@ title: BooleanGuard
 
 
 [JVM]\
-class [BooleanGuard](index.html)(origin: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), continuation: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)) : [EntityWrap](../../io.github.kerelape.reikai.core/-entity-wrap/index.html)
+class [BooleanGuard](index.html)(origin: [Entity](../../io.github.kerelape.reikai/-entity/index.html), continuation: [Entity](../../io.github.kerelape.reikai/-entity/index.html)) : [EntityWrap](../../io.github.kerelape.reikai/-entity-wrap/index.html)
 
 BooleanGuard.
 
@@ -33,7 +33,7 @@ Ensures that origin is one byte long.
 
 | | |
 |---|---|
-| [BooleanGuard](-boolean-guard.html) | [JVM]<br>fun [BooleanGuard](-boolean-guard.html)(origin: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), continuation: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)) |
+| [BooleanGuard](-boolean-guard.html) | [JVM]<br>fun [BooleanGuard](-boolean-guard.html)(origin: [Entity](../../io.github.kerelape.reikai/-entity/index.html), continuation: [Entity](../../io.github.kerelape.reikai/-entity/index.html)) |
 
 
 ## Functions
@@ -41,5 +41,5 @@ Ensures that origin is one byte long.
 
 | Name | Summary |
 |---|---|
-| [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html) | [JVM]<br>open suspend override fun [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
+| [dataize](../../io.github.kerelape.reikai/-entity/dataize.html) | [JVM]<br>open suspend override fun [dataize](../../io.github.kerelape.reikai/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
 

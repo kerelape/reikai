@@ -10,7 +10,7 @@ title: Fork
 
 
 [JVM]\
-class [Fork](index.html)(condition: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), value: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), fallback: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)) : [EntityWrap](../../io.github.kerelape.reikai.core/-entity-wrap/index.html)
+class [Fork](index.html)(condition: [Entity](../../io.github.kerelape.reikai/-entity/index.html), value: [Entity](../../io.github.kerelape.reikai/-entity/index.html), fallback: [Entity](../../io.github.kerelape.reikai/-entity/index.html)) : [EntityWrap](../../io.github.kerelape.reikai/-entity-wrap/index.html)
 
 Fork. Selects value or fallback depending on condition.
 
@@ -29,7 +29,7 @@ Fork. Selects value or fallback depending on condition.
 
 | | |
 |---|---|
-| [Fork](-fork.html) | [JVM]<br>fun [Fork](-fork.html)(condition: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), value: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), fallback: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)) |
+| [Fork](-fork.html) | [JVM]<br>fun [Fork](-fork.html)(condition: [Entity](../../io.github.kerelape.reikai/-entity/index.html), value: [Entity](../../io.github.kerelape.reikai/-entity/index.html), fallback: [Entity](../../io.github.kerelape.reikai/-entity/index.html)) |
 
 
 ## Functions
@@ -37,5 +37,5 @@ Fork. Selects value or fallback depending on condition.
 
 | Name | Summary |
 |---|---|
-| [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html) | [JVM]<br>open suspend override fun [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
+| [dataize](../../io.github.kerelape.reikai/-entity/dataize.html) | [JVM]<br>open suspend override fun [dataize](../../io.github.kerelape.reikai/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
 

@@ -10,7 +10,7 @@ title: IntegerAsText
 
 
 [JVM]\
-fun [IntegerAsText](-integer-as-text.html)(source: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html))
+fun [IntegerAsText](-integer-as-text.html)(source: [Entity](../../io.github.kerelape.reikai/-entity/index.html))
 
 
 

@@ -10,7 +10,7 @@ title: Identity
 
 
 [JVM]\
-fun [Identity](-identity.html)(first: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), second: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html))
+fun [Identity](-identity.html)(first: [Entity](../../io.github.kerelape.reikai/-entity/index.html), second: [Entity](../../io.github.kerelape.reikai/-entity/index.html))
 
 
 

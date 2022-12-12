@@ -10,11 +10,11 @@ title: toBoolean
 
 
 [JVM]\
-suspend fun [Entity](../io.github.kerelape.reikai.core/-entity/index.html).[toBoolean](to-boolean.html)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+suspend fun [Entity](../io.github.kerelape.reikai/-entity/index.html).[toBoolean](to-boolean.html)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
 
 
-Convert [Entity](../io.github.kerelape.reikai.core/-entity/index.html) to [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html).
+Convert [Entity](../io.github.kerelape.reikai/-entity/index.html) to [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html).
 
 
 

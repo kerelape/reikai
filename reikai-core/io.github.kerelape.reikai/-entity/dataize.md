@@ -1,7 +1,7 @@
 ---
 title: dataize
 ---
-//[reikai-core](../../../index.html)/[io.github.kerelape.reikai.core](../index.html)/[Entity](index.html)/[dataize](dataize.html)
+//[reikai-core](../../../index.html)/[io.github.kerelape.reikai](../index.html)/[Entity](index.html)/[dataize](dataize.html)
 
 
 

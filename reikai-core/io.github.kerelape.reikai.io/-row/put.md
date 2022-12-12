@@ -10,7 +10,7 @@ title: put
 
 
 [JVM]\
-open suspend override fun [put](put.html)(data: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)): [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)
+open suspend override fun [put](put.html)(data: [Entity](../../io.github.kerelape.reikai/-entity/index.html)): [Entity](../../io.github.kerelape.reikai/-entity/index.html)
 
 
 

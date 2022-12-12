@@ -10,7 +10,7 @@ title: get
 
 
 [JVM]\
-abstract suspend fun [get](get.html)(position: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), size: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)): [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)
+abstract suspend fun [get](get.html)(position: [Entity](../../io.github.kerelape.reikai/-entity/index.html), size: [Entity](../../io.github.kerelape.reikai/-entity/index.html)): [Entity](../../io.github.kerelape.reikai/-entity/index.html)
 
 
 

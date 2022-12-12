@@ -10,7 +10,7 @@ title: Source
 
 
 [JVM]\
-interface [Source](index.html) : [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)
+interface [Source](index.html) : [Entity](../../io.github.kerelape.reikai/-entity/index.html)
 
 Source of data.
 
@@ -29,8 +29,8 @@ Source of data.
 
 | Name | Summary |
 |---|---|
-| [close](close.html) | [JVM]<br>abstract suspend fun [close](close.html)(): [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)<br>Close the source. |
-| [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html) | [JVM]<br>abstract suspend fun [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
+| [close](close.html) | [JVM]<br>abstract suspend fun [close](close.html)(): [Entity](../../io.github.kerelape.reikai/-entity/index.html)<br>Close the source. |
+| [dataize](../../io.github.kerelape.reikai/-entity/dataize.html) | [JVM]<br>abstract suspend fun [dataize](../../io.github.kerelape.reikai/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
 | [open](open.html) | [JVM]<br>abstract suspend fun [open](open.html)(): [Channel](../-channel/index.html)<br>Open a channel on this source. |
 
 

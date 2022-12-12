@@ -37,7 +37,7 @@ Source of TCP connections.
 
 | Name | Summary |
 |---|---|
-| [close](close.html) | [JVM]<br>open suspend override fun [close](close.html)(): [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)<br>Close the underlying [AsynchronousServerSocketChannel](https://docs.oracle.com/javase/8/docs/api/java/nio/channels/AsynchronousServerSocketChannel.html). |
+| [close](close.html) | [JVM]<br>open suspend override fun [close](close.html)(): [Entity](../../io.github.kerelape.reikai/-entity/index.html)<br>Close the underlying [AsynchronousServerSocketChannel](https://docs.oracle.com/javase/8/docs/api/java/nio/channels/AsynchronousServerSocketChannel.html). |
 | [dataize](dataize.html) | [JVM]<br>open suspend override fun [dataize](dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) |
 | [open](open.html) | [JVM]<br>open suspend override fun [open](open.html)(): [Channel](../../io.github.kerelape.reikai.io/-channel/index.html) |
 

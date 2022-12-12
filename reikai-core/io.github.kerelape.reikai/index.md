@@ -1,11 +1,11 @@
 ---
-title: io.github.kerelape.reikai.core
+title: io.github.kerelape.reikai
 ---
-//[reikai-core](../../index.html)/[io.github.kerelape.reikai.core](index.html)
+//[reikai-core](../../index.html)/[io.github.kerelape.reikai](index.html)
 
 
 
-# Package io.github.kerelape.reikai.core
+# Package io.github.kerelape.reikai
 
 
 

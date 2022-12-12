@@ -14,7 +14,7 @@ title: io.github.kerelape.reikai.math
 
 | Name | Summary |
 |---|---|
-| [IntegerGuard](-integer-guard/index.html) | [JVM]<br>class [IntegerGuard](-integer-guard/index.html)(origin: [Entity](../io.github.kerelape.reikai.core/-entity/index.html), continuation: [Entity](../io.github.kerelape.reikai.core/-entity/index.html)) : [EntityWrap](../io.github.kerelape.reikai.core/-entity-wrap/index.html)<br>IntegerGuard. |
+| [IntegerGuard](-integer-guard/index.html) | [JVM]<br>class [IntegerGuard](-integer-guard/index.html)(origin: [Entity](../io.github.kerelape.reikai/-entity/index.html), continuation: [Entity](../io.github.kerelape.reikai/-entity/index.html)) : [EntityWrap](../io.github.kerelape.reikai/-entity-wrap/index.html)<br>IntegerGuard. |
 
 
 ## Properties
@@ -22,5 +22,5 @@ title: io.github.kerelape.reikai.math
 
 | Name | Summary |
 |---|---|
-| [asEntity](as-entity.html) | [JVM]<br>val [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html).[asEntity](as-entity.html): [Entity](../io.github.kerelape.reikai.core/-entity/index.html)<br>Entity representation of the number. |
+| [asEntity](as-entity.html) | [JVM]<br>val [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html).[asEntity](as-entity.html): [Entity](../io.github.kerelape.reikai/-entity/index.html)<br>Entity representation of the number. |
 

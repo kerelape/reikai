@@ -10,7 +10,7 @@ title: Sprintf
 
 
 [JVM]\
-fun [Sprintf](-sprintf.html)(template: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html), vararg args: [Entity](../../io.github.kerelape.reikai.core/-entity/index.html))
+fun [Sprintf](-sprintf.html)(template: [Entity](../../io.github.kerelape.reikai/-entity/index.html), vararg args: [Entity](../../io.github.kerelape.reikai/-entity/index.html))
 
 
 

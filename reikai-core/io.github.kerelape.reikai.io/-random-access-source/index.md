@@ -10,7 +10,7 @@ title: RandomAccessSource
 
 
 [JVM]\
-interface [RandomAccessSource](index.html) : [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)
+interface [RandomAccessSource](index.html) : [Entity](../../io.github.kerelape.reikai/-entity/index.html)
 
 Source of [RandomAccessChannel](../-random-access-channel/index.html)s
 
@@ -29,8 +29,8 @@ Source of [RandomAccessChannel](../-random-access-channel/index.html)s
 
 | Name | Summary |
 |---|---|
-| [close](close.html) | [JVM]<br>abstract suspend fun [close](close.html)(): [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)<br>Close the source. |
-| [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html) | [JVM]<br>abstract suspend fun [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
+| [close](close.html) | [JVM]<br>abstract suspend fun [close](close.html)(): [Entity](../../io.github.kerelape.reikai/-entity/index.html)<br>Close the source. |
+| [dataize](../../io.github.kerelape.reikai/-entity/dataize.html) | [JVM]<br>abstract suspend fun [dataize](../../io.github.kerelape.reikai/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
 | [open](open.html) | [JVM]<br>abstract suspend fun [open](open.html)(): [RandomAccessChannel](../-random-access-channel/index.html)<br>Open channel. |
 
 

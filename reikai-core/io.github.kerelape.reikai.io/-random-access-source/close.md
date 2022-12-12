@@ -10,7 +10,7 @@ title: close
 
 
 [JVM]\
-abstract suspend fun [close](close.html)(): [Entity](../../io.github.kerelape.reikai.core/-entity/index.html)
+abstract suspend fun [close](close.html)(): [Entity](../../io.github.kerelape.reikai/-entity/index.html)
 
 
 

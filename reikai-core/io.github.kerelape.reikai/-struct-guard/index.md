@@ -1,7 +1,7 @@
 ---
 title: StructGuard
 ---
-//[reikai-core](../../../index.html)/[io.github.kerelape.reikai.core](../index.html)/[StructGuard](index.html)
+//[reikai-core](../../../index.html)/[io.github.kerelape.reikai](../index.html)/[StructGuard](index.html)
 
 
 

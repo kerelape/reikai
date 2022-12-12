@@ -10,7 +10,7 @@ title: False
 
 
 [JVM]\
-object [False](index.html) : [EntityWrap](../../io.github.kerelape.reikai.core/-entity-wrap/index.html)
+object [False](index.html) : [EntityWrap](../../io.github.kerelape.reikai/-entity-wrap/index.html)
 
 False object that always dataizes as 0.
 
@@ -29,5 +29,5 @@ False object that always dataizes as 0.
 
 | Name | Summary |
 |---|---|
-| [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html) | [JVM]<br>open suspend override fun [dataize](../../io.github.kerelape.reikai.core/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
+| [dataize](../../io.github.kerelape.reikai/-entity/dataize.html) | [JVM]<br>open suspend override fun [dataize](../../io.github.kerelape.reikai/-entity/dataize.html)(): [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)<br>Representation of the object in bytes. |
 
