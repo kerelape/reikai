@@ -23,7 +23,6 @@
  */
 package io.github.kerelape.reikai
 
-import io.github.kerelape.reikai.Struct
 import io.github.kerelape.reikai.text.Text
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions

@@ -1,6 +1,5 @@
 package io.github.kerelape.reikai
 
-import io.github.kerelape.reikai.*
 import io.github.kerelape.reikai.logic.True
 import io.github.kerelape.reikai.math.asEntity
 import io.github.kerelape.reikai.text.Text
