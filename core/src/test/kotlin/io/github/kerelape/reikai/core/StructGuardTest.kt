@@ -6,6 +6,7 @@ import io.github.kerelape.reikai.text.Text
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 
 /**
  * Test cases for [StructGuard].
@@ -19,7 +20,7 @@ internal class StructGuardTest {
      */
     @Test
     fun `fails with too long struct`() {
-        try {
+        assertThrows<DataizationException> {
             runBlocking {
                 StructGuard(
                     Struct(True),
@@ -28,9 +29,6 @@ internal class StructGuardTest {
                     Empty
                 ).dataize()
             }
-            Assertions.fail("Did not fail")
-        } catch (exception: Exception) {
-            Assertions.assertEquals("Too short struct!", exception.message)
         }
     }
 
@@ -39,7 +37,7 @@ internal class StructGuardTest {
      */
     @Test
     fun `fails with too short struct`() {
-        try {
+        assertThrows<DataizationException> {
             runBlocking {
                 StructGuard(
                     Struct(True, True),
@@ -48,9 +46,6 @@ internal class StructGuardTest {
                     Empty
                 ).dataize()
             }
-            Assertions.fail("Did not fail")
-        } catch (exception: Exception) {
-            Assertions.assertEquals("Too long struct!", exception.message)
         }
     }
 
@@ -59,20 +54,18 @@ internal class StructGuardTest {
      */
     @Test
     fun `proceeds with fine struct`() {
-        runBlocking {
-            Assertions.assertEquals(
-                "Abcdefu",
+        Assertions.assertEquals(
+            "Abcdefu",
+            String(
                 runBlocking {
-                    String(
-                        StructGuard(
-                            Text("Abcdefu"),
-                            Length(Text("Abcdefu")),
-                            Text("?"),
-                            Text("Abcdefu")
-                        ).dataize()
-                    )
+                    StructGuard(
+                        Text("Abcdefu"),
+                        Length(Text("Abcdefu")),
+                        Text("?"),
+                        Text("Abcdefu")
+                    ).dataize()
                 }
             )
-        }
+        )
     }
 }
