@@ -6,7 +6,7 @@ import io.github.kerelape.reikai.logic.Identity
 /**
 * StructGuard.
 *
-* Enchures that [origin] is correct length.
+* Ensures that [origin] is correct length.
 *
 * @since 0.2.0
  */
