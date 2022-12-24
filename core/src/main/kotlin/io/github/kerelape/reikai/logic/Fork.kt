@@ -33,11 +33,11 @@ import io.github.kerelape.reikai.Struct
  * @since 0.0.0
  */
 class Fork(condition: Entity, value: Entity, fallback: Entity) : EntityWrap(
-	BooleanGuard(
-		condition,
-		Struct(
-			Optional(value, condition),
-			Optional(fallback, Not(condition))
-		)
-	)
+    BooleanGuard(
+        condition,
+        Struct(
+            Optional(value, condition),
+            Optional(fallback, Not(condition))
+        )
+    )
 )
