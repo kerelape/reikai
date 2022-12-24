@@ -25,6 +25,7 @@ package io.github.kerelape.reikai.logic
 
 import io.github.kerelape.reikai.Entity
 import io.github.kerelape.reikai.EntityWrap
+import io.github.kerelape.reikai.Struct
 
 /**
  * Fork. Selects value or fallback depending on condition.
@@ -32,7 +33,11 @@ import io.github.kerelape.reikai.EntityWrap
  * @since 0.0.0
  */
 class Fork(condition: Entity, value: Entity, fallback: Entity) : EntityWrap(
-    Entity {
-        (if (condition.toBoolean()) value else fallback).dataize()
-    }
+	BooleanGuard(
+		condition,
+		Struct(
+			Optional(value, condition),
+			Optional(fallback, Not(condition))
+		)
+	)
 )
